@@ -1,11 +1,11 @@
 <div class="clearfix post-footer">
                   <a href="#" class="left post-like js-favorite" title="Love this"><i class="mdi-action-favorite"></i> <span class="numb">109</span></a>
                   <ul class="clearfix right share-post">
-                    <li><a href="#"><i class="fa fa-facebook"></i> <span>SHARE</span></a>
+                    <li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url }}"><i class="fa fa-facebook"></i> <span>SHARE</span></a>
                     </li>
-                    <li><a href="#"><i class="fa fa-twitter"></i> <span>TWEET</span></a>
+                    <li><a target="_blank" href="https://twitter.com/home?status={{ site.description | truncate: 80 | append: ' ' | append: site.url | append: site.baseurl | append: page.url | uri_escape }}"><i class="fa fa-twitter"></i> <span>TWEET</span></a>
                     </li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i> <span>PLUS</span></a>
+                    <li><a target="_blank" href="https://plus.google.com/share?url={{ page.url | prepend: site.baseurl | prepend: site.url }}"><i class="fa fa-google-plus"></i> <span>PLUS</span></a>
                     </li>
                   </ul>
                 </div>

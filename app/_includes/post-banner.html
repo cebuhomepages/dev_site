@@ -1,21 +1,28 @@
+{% if page.is_blog %}
  <!-- Banner start -->
     <section id="banner" class="root-sec cyan padd-tb-55 single-banner blogpage-banner-wrap">
       <div class="container">
         <div class="row">
           <div class="clearfix blog-banner-text blog-single-banner">
             <div class="col-md-12">
-              <h2 class="title">Your awesome post title</h2>
+              <h2 class="title">{{ page.title }}</h2>
               <ul class="clearfix blog-post-meta">
-                <li>By <a href="#">Admin</a>
+                <li>By <a href="#">{{ page.author }}</a>
                 </li>
-                <li>March 28, 2015</li>
+                <li>{{ page.date }}</li>
                 <li><a href="#">5 Comments</a>
                 </li>
-                <li><a href="#">UX Design</a>
-                </li>
+                <li>
+                {% if site.data.tags[tag] %}
+                <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ site.data.tags[tag].name }}</a>
+                {% else %}
+                 <a href="javascript:void(0);" class="disabled">{{ tag }}</a>
+                {% endif %}
+               </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </section> <!-- ./Banner end -->
+{% endif %}
