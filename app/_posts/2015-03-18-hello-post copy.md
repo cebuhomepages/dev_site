@@ -1,37 +1,12 @@
 ---
-
-layout:     default
-title:      Single Page
-type:       home
-navigation: true
-css:        blog.css
-
-date:       2014-05-08
-image:      header-bear.jpg
-excerpt:    The idea of translating our thoughts into actual products and sharing it to everyone was a dream a long time ago. And now.. it has become a <i>reality..</i>
- <a href="/about.html" title="Continue" class="more">Continue</a>
-gradient:   1
-
+layout:		post
+is_blog: 	true
+categories: jekyll
 ---
 
-    {% include post-banner.html %}
+                  Curabitur suscipit suscipit tellus. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Donec vitae sapien ut libero venenatis faucibus. In ac felis quis tortor malesuada pretium.
 
-     <!-- Blog Post Container-->
-    <section id="all-posts" class="root-sec grey lighten-5 blogpage-posts-wrap">
-      <div class="container">
-        <div class="row">
-          <div class="clearfix all-blog-post blog-inner with-sidebar">
-
-          <!-- post container start-->
-            <div class="col-sm-8">
-              <article class="single-post-page">
-                <div class="thumb-wrap">
-                  <img src="http://placehold.it/750x400" alt="">
-                </div>
-                <div class="single-post-content">
-                  <p>Curabitur suscipit suscipit tellus. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Donec vitae sapien ut libero venenatis faucibus. In ac felis quis tortor malesuada pretium.</p>
-
-                  <h2>Photography by <a href="#">Picjumbo</a></h2>
+                  ## Photography by <a href="#">Picjumbo</a></h2>
 
                   <p>Maecenas vestibulum mollis diam. Duis vel nibh at velit scelerisque suscipit. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. In ac felis quis tortor malesuada pretium. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 
@@ -53,28 +28,6 @@ gradient:   1
 
                   <p>Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Fusce fermentum odio nec arcu. In auctor lobortis lacus. Fusce vel dui. Praesent turpis. Fusce fermentum odio nec arcu. Aenean commodo ligula eget dolor. Etiam iaculis nunc ac metus. Praesent blandit laoreet nibh. In hac habitasse platea dictumst. In hac habitasse platea dictumst. Ut varius tincidunt libero. Donec id justo.</p>
 
-<pre>
-.some-style {
-    width: 1170px;
-    height: 200px;
-    margin: 0 auto;
-    background-color: #000000;
-}
-</pre>
 
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu.</p>
                   <p class="italic">In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa enim at lorem. Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor. </p>
-                </div>
-                
-                {% include post-footer.html %}
-
-                {% include post-comments.html %}
-              </article>
-            </div> <!-- ./post container end-->
-
-            <!-- Sidebar start-->
-            {% include post-side-bar.html %}
-          </div>
-        </div>
-      </div> <!-- ./container end-->
-    </section>  <!-- ./Blog Post Container end-->

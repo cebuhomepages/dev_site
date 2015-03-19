@@ -6,7 +6,12 @@
             <div class="nav-inner">
               <nav class="primary-nav">
                 <div class="clearfix nav-wrapper">
-                  <a href="#home" class="left brand-logo menu-smooth-scroll" data-section="#home"><img src="images/logo.png" alt="">
+                  <a href="#home" class="left brand-logo menu-smooth-scroll" data-section="#home">
+                    {% if site.profile_pic %}
+                      <img src="{{ site.logo | prepend: site.baseurl }}" alt="">
+                    {% else %}
+                      <img src="{{ 'images/logo.png' | prepend: site.baseurl }}" alt="">
+                    {% endif %}
                   </a>
                   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
                   <ul class="right static-menu">
@@ -32,7 +37,11 @@
                     <li class="mobile-profile">
                      <div class="profile-inner">
                         <div class="pp-container">
-                            <img src="images/person.png" alt="">
+                            {% if site.profile_pic %}
+                            <img src="{{ site.profile_pic | prepend: site.baseurl }}" alt="">
+                            {% else %}
+                            <img src="{{ 'images/person.png' | prepend: site.baseurl }}" alt="">
+                            {% endif %}
                         </div>
                         <h3>John Doe</h3>
                         <h5>Creative UI/UX Expert</h5>
