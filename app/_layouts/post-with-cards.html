@@ -1,0 +1,263 @@
+---
+layout: default
+is_blog: true
+---
+	{% if page.banner-image %}
+		{% assign banner_image = page.banner-image %}
+	{% else %}
+		{% assign banner_image = "http://placehold.it/750x400" %}
+	{% endif %}
+
+    {% include post-banner.html %}
+
+    <!-- Blog Post Container -->
+    <section class="bottom-50 root-sec grey lighten-5 blogpage-posts-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="clearfix all-blog-post blog-inner with-sidebar">
+            <div class="col-sm-8">
+              <div class="row" id="blog-posts">
+
+                {% for post in site.posts %}
+                <article class="col-xs-12 col-sm-12 col-md-6 single-card-box single-post">
+                  <div class="card">
+                    <div class="card-image">
+                      <div class="card-img-wrap">
+                          {% if post.thumbnail_type == 'audio' %}
+                            <div class="blog-post-thumb waves-effect waves-block waves-light">
+                            <div class="player" id="audio2" data-file-sec="audios/audio.mp3" data-height="40"></div>
+                            </div>
+                          {% elsif post.thumbnail_type == 'video' %}
+                          <div class="blog-post-thumb videoPost">
+                          <iframe src="//player.vimeo.com/video/7449107" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                          </div>
+                          {% elsif post.thumbnail_type == 'multi_image' %}
+                          <div class="blog-post-thumb waves-effect waves-block waves-light">
+                          <div class="thumb-slides-container">
+                            <img class="activator" src="http://placehold.it/350x200" alt="">
+                            <img class="activator" src="http://placehold.it/350x200" alt="">
+                            <img class="activator" src="http://placehold.it/350x200" alt="">
+                          </div>
+                        </div>
+                          {% else %}
+                          <div class="blog-post-thumb waves-effect waves-block waves-light">
+                          <a href="single.html"><img class="activator" src="http://placehold.it/350x200" alt="">
+                          </a>
+                        </div>
+                          {% endif %}
+                        
+                        <div class="post-body">
+                          <a href="single.html" class="post-title-link"><h2 class="cyan-text post-title">{{ post.title }}</h2></a>
+                          <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix card-content">
+                      <a href="#" class="left js-favorite" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">23</span></a>
+                      <a href="{{ site.baseurl }}{{ post.url }}" class="cyan-text right">read more</a>
+                    </div>
+                  </div>
+                </article> <!--./single post-->
+              {% endfor %}
+
+                <article class="col-xs-12 col-sm-12 col-md-6 single-card-box single-post">
+                  <div class="card">
+                    <div class="card-image">
+                      <div class="card-img-wrap">
+                        <div class="blog-post-thumb waves-effect waves-block waves-light">
+                          <a href="single.html"><img class="activator" src="http://placehold.it/350x200" alt="">
+                          </a>
+                        </div>
+                        <div class="post-body">
+                          <a href="single.html" class="post-title-link"><h2 class="cyan-text post-title">The Image Post</h2></a>
+                          <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix card-content">
+                      <a href="#" class="left js-favorite" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">23</span></a>
+                      <a href="single.html" class="cyan-text right">read more</a>
+                    </div>
+                  </div>
+                </article> <!--./single post-->
+
+                <article class="col-xs-12 col-sm-12 col-md-6 single-card-box single-post">
+                  <div class="card">
+                    <div class="card-image">
+                      <div class="card-img-wrap">
+                        <div class="blog-post-thumb waves-effect waves-block waves-light">
+                          <div class="player" id="audio1" data-file-sec="audios/audio.mp3" data-height="40"></div>
+                        </div>
+                        <div class="post-body">
+                          <a href="single.html" class="post-title-link"><h2 class="cyan-text post-title">The Audio Post</h2></a>
+                          <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix card-content">
+                      <a href="#" class="left js-favorite" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">23</span></a>
+                      <a href="single.html" class="cyan-text right">read more</a>
+                    </div>
+                  </div>
+                </article> <!--./single post-->
+                
+                <article class="col-xs-12 col-sm-12 col-md-6 single-card-box single-post">
+                  <div class="card">
+                    <div class="card-image">
+                      <div class="card-img-wrap">
+                        <div class="blog-post-thumb waves-effect waves-block waves-light">
+                          <a href="single.html"><img class="activator" src="http://placehold.it/350x200" alt="">
+                          </a>
+                        </div>
+                        <div class="post-body">
+                          <a href="single.html" class="post-title-link"><h2 class="cyan-text post-title">The Image Post</h2></a>
+                          <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix card-content">
+                      <a href="#" class="left js-favorite" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">23</span></a>
+                      <a href="single.html" class="cyan-text right">read more</a>
+                    </div>
+                  </div>
+                </article> <!--./single post-->
+                
+                <article class="col-xs-12 col-sm-12 col-md-6 single-card-box single-post">
+                  <div class="card">
+                    <div class="card-image">
+                      <div class="card-img-wrap">
+                        <div class="blog-post-thumb waves-effect waves-block waves-light">
+                          <div class="thumb-slides-container">
+                            <img class="activator" src="http://placehold.it/350x200" alt="">
+                            <img class="activator" src="http://placehold.it/350x200" alt="">
+                            <img class="activator" src="http://placehold.it/350x200" alt="">
+                          </div>
+                        </div>
+                        <div class="post-body">
+                          <a href="single.html" class="post-title-link"><h2 class="cyan-text post-title">The Image Slider Post</h2></a>
+                          <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix card-content">
+                      <a href="#" class="left js-favorite" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">23</span></a>
+                      <a href="single.html" class="cyan-text right">read more</a>
+                    </div>
+                  </div>
+                </article> <!--./single post-->
+                
+                <article class="col-xs-12 col-sm-12 col-md-6 single-card-box single-post">
+                  <div class="card">
+                    <div class="card-image">
+                      <div class="card-img-wrap">
+                        <div class="blog-post-thumb waves-effect waves-block waves-light">
+                          <a href="single.html"><img class="activator" src="http://placehold.it/350x200" alt="">
+                          </a>
+                        </div>
+                        <div class="post-body">
+                          <a href="single.html" class="post-title-link"><h2 class="cyan-text post-title">The Image Post</h2></a>
+                          <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix card-content">
+                      <a href="#" class="left js-favorite" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">23</span></a>
+                      <a href="single.html" class="cyan-text right">read more</a>
+                    </div>
+                  </div>
+                </article> <!--./single post-->
+                
+                <article class="col-xs-12 col-sm-12 col-md-6 single-card-box single-post">
+                  <div class="card">
+                    <div class="card-image">
+                      <div class="card-img-wrap">
+                        <div class="blog-post-thumb waves-effect waves-block waves-light">
+                          <div class="thumb-slides-container">
+                            <img class="activator" src="http://placehold.it/350x200" alt="">
+                            <img class="activator" src="http://placehold.it/350x200" alt="">
+                            <img class="activator" src="http://placehold.it/350x200" alt="">
+                          </div>
+                        </div>
+                        <div class="post-body">
+                          <a href="single.html" class="post-title-link"><h2 class="cyan-text post-title">The Image Slider Post</h2></a>
+                          <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix card-content">
+                      <a href="#" class="left js-favorite" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">23</span></a>
+                      <a href="single.html" class="cyan-text right">read more</a>
+                    </div>
+                  </div>
+                </article> <!--./single post-->
+                
+                <article class="col-xs-12 col-sm-12 col-md-6 single-card-box single-post">
+                  <div class="card">
+                    <div class="card-image">
+                      <div class="card-img-wrap">
+                        <div class="blog-post-thumb videoPost">
+                          <div class="player" id="video1" data-file-sec="videos/video.mp4" data-image-src="images/video-placeholder.png" data-aspectratio="16:9"></div>
+                        </div>
+                        <div class="post-body">
+                          <a href="single.html" class="post-title-link"><h2 class="cyan-text post-title">The Video Post</h2></a>
+                          <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix card-content">
+                      <a href="#" class="left js-favorite" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">23</span></a>
+                      <a href="single.html" class="cyan-text right">read more</a>
+                    </div>
+                  </div>
+                </article> <!--./single post-->
+                
+                <article class="col-xs-12 col-sm-12 col-md-6 single-card-box single-post">
+                  <div class="card">
+                    <div class="card-image">
+                      <div class="card-img-wrap">
+                        <div></div>
+                        <div class="blog-post-thumb videoPost">
+                          <iframe src="https://www.youtube.com/embed/hQfNtnKm5nA" allowfullscreen></iframe>
+                        </div>
+                        <div class="post-body">
+                          <a href="single.html" class="post-title-link"><h2 class="cyan-text post-title">The YouTube Video Post</h2></a>
+                          <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix card-content">
+                      <a href="#" class="left js-favorite" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">23</span></a>
+                      <a href="single.html" class="cyan-text right">read more</a>
+                    </div>
+                  </div>
+                </article> <!--./single post-->
+                
+                <article class="col-xs-12 col-sm-12 col-md-6 single-card-box single-post">
+                  <div class="card">
+                    <div class="card-image">
+                      <div class="card-img-wrap">
+                        <div class="blog-post-thumb videoPost">
+                          <iframe src="//player.vimeo.com/video/7449107" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                        <div class="post-body">
+                          <a href="single.html" class="post-title-link"><h2 class="cyan-text post-title">The Viemo Video Post</h2></a>
+                          <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix card-content">
+                      <a href="#" class="left js-favorite" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">23</span></a>
+                      <a href="single.html" class="cyan-text right">read more</a>
+                    </div>
+                  </div>
+                </article> <!--./single post-->
+              </div>
+            </div>
+
+            {% include post-side-bar.html %}
+            
+          </div>
+        </div>
+      </div> <!-- ./container end -->
+    </section> <!-- ./Blog Post container end-->
+

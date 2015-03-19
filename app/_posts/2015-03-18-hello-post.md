@@ -4,6 +4,8 @@ is_blog: 	true
 categories: blog
 author:		Ian Cabigon
 tags:		['how-to', 'tips']
+
+thumbnail_type: 'video'
 ---
 
 Curabitur suscipit suscipit tellus. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Donec vitae sapien ut libero venenatis faucibus. In ac felis quis tortor malesuada pretium.
