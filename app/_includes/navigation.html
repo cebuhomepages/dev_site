@@ -7,10 +7,10 @@
               <nav class="primary-nav">
                 <div class="clearfix nav-wrapper">
                   <a href="#home" class="left brand-logo menu-smooth-scroll" data-section="#home">
-                    {% if site.profile_pic %}
+                    {% if site.logo %}
                       <img src="{{ site.logo | prepend: site.baseurl }}" alt="">
                     {% else %}
-                      <img src="{{ 'images/logo.png' | prepend: site.baseurl }}" alt="">
+                      <img src="{{ '/images/logo.png' | prepend: site.baseurl }}" alt="">
                     {% endif %}
                   </a>
                   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -40,29 +40,18 @@
                             {% if site.profile_pic %}
                             <img src="{{ site.profile_pic | prepend: site.baseurl }}" alt="">
                             {% else %}
-                            <img src="{{ 'images/person.png' | prepend: site.baseurl }}" alt="">
+                            <img src="{{ '/images/person.png' | prepend: site.baseurl }}" alt="">
                             {% endif %}
                         </div>
-                        <h3>John Doe</h3>
-                        <h5>Creative UI/UX Expert</h5>
+                        <h3>{{ site.owner.fullname }}</h3>
+                        <h5>{{ site.owner.job }}</h5>
                       </div>
                     </li><!-- mini profile end-->
-
-
-                    <li><a href="#about" data-section="#about" class="menu-smooth-scroll"><i class="fa fa-user fa-fw"></i>About Me</a>
+                    
+                    {% for nav in page.nav_list %}
+                    <li><a href="{{ nav.href }}" data-section="{{ nav.scrollto }}" class="menu-smooth-scroll"><i class="fa {{ nav.icon }} fa-fw"></i>{{ nav.description }}</a>
                     </li>
-                    <li><a href="#resume" data-section="#resume" class="menu-smooth-scroll"><i class="fa fa-file-text fa-fw"></i>Resume</a>
-                    </li>
-                    <li><a href="#portfolio" data-section="#portfolio" class="menu-smooth-scroll"><i class="fa fa-briefcase fa-fw"></i>Portfolio</a>
-                    </li>
-                    <li><a href="#team" data-section="#team" class="menu-smooth-scroll"><i class="fa fa-users fa-fw"></i>Team</a>
-                    </li>
-                    <li><a href="#testimonial" data-section="#testimonial" class="menu-smooth-scroll"><i class="fa fa-comments fa-fw"></i>Testimonial</a>
-                    </li>
-                    <li><a href="#blog" data-section="#blog" class="menu-smooth-scroll"><i class="fa fa-pencil fa-fw"></i>Blog</a>
-                    </li>
-                    <li><a href="#contact" data-section="#contact" class="menu-smooth-scroll"><i class="fa fa-paper-plane fa-fw"></i>Contact</a>
-                    </li>
+                    {% endfor %}
                   </ul>
                   <ul id="dropdown1" class="inline-menu submenu-ul dropdown-content">
                     <li>Home</li>

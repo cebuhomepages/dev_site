@@ -66,7 +66,7 @@ header.nav {
 	padding-top: 0;
 }
 .single-widget ul li a {
-	color: #00bcd4;
+	color: #4CAF50;
 	font-size: 14px;
 	display: block;
 	line-height: 20px;
@@ -78,7 +78,7 @@ header.nav {
 }
 
 a.tags {
-	background-color: #00bcd4;
+	background-color: #4CAF50;
 	color: #fff;
 	display: inline-block;
 	padding: 7px;
@@ -155,7 +155,7 @@ a.tags {
 .single-post-content h4 a,
 .single-post-content h5 a,
 .single-post-content h6 a {
-	color: #00bcd4;
+	color: #4CAF50;
 }
 
 .single-post-content h2 {
@@ -178,7 +178,7 @@ a.tags {
 	font-family: monospace, monospace;
 }
 .single-post-content blockquote {
-	border-left: 5px solid #00bcd4;
+	border-left: 5px solid #4CAF50;
 	font-size: 16px;
 	font-style: italic;
 	font-weight: 400;
@@ -240,7 +240,7 @@ a.tags {
 	margin-right: 6px;
 }
 .share-post li a:hover {
-	color: #00bcd4;
+	color: #4CAF50;
 }
 
 .post-like {
@@ -289,7 +289,7 @@ a.tags {
 }
 
 .com-title a {
-	color: #00bcd4;
+	color: #4CAF50;
 	margin-left: 15px;
 	padding-left: 15px;
 	border-left: 1px solid #dddddd;
@@ -451,4 +451,8 @@ a.tags {
 		display: none;
 	}
 
+}
+
+.blog-banner-text .title{
+	color: #fff;
 }

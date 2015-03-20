@@ -12,7 +12,7 @@
             {% endif %}
         {% endfor %}
         {% if tag %}
-            <a href="{{ site.baseurl }}tags/{{ tag.id }}" class="tags">{{ tag.name }}</a>
+            <a href="{{ site.baseurl }}/tags/{{ tag.id }}" class="tags">{{ tag.name }}</a>
         {% else %}
             <a href="javascript:void(0);" class="disabled">{{ post_tag }}</a>
         {% endif %}

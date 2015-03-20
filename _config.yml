@@ -36,4 +36,13 @@ markdown: kramdown
 
 pygments: false
 
-baseurl: "http://localhost:3000/"
+baseurl: "http://localhost:3000"
+
+owner:
+  fullname: Luchelle Ann Cabigon
+  nickname: Luchelle
+  nickname_short: Luch
+  job: Licensed Real Estate Broker
+  service: I'm helping you Buy or Sell your property
+
+logo: /images/logo.jpg
