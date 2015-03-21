@@ -608,8 +608,13 @@ header.nav.hide-menu {
 .home-subtitle {
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 38px;
+  margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+.home-content h3{
+  text-transform: none;
+  margin-bottom: 38px;
 }
 
 .home-content > a.btn-large i {
@@ -1912,5 +1917,14 @@ span.num {
 .contact-inner .title{
   color: #fff;
 }
+
+.blog-text .title{
+  color: #9E9E9E;
+}
+
+.blog-text i{
+  color: #4CAF50;
+}
+
 
 

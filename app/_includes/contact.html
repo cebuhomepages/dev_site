@@ -9,13 +9,13 @@
                 <div class="clearfix section-head contact-text">
                   <div class="col-sm-12">
                     <h2 class="title">Contact</h2>
-                    <p class="regular-text">Collins Street West Victoria 8007 Australia</p>
+                    <p class="regular-text">{{ site.owner.address }}</p>
                     <ul class="clearfix contact-info">
-                      <li><a href="">+880 1234 567890</a>
+                      <li><a href="tel:{{ site.owner.phone }}"></a>
                       </li>
-                      <li><a href="">support@website.net</a>
+                      <li><a href="mailto:{{ site.owner.email }}">{{ site.owner.email }}</a>
                       </li>
-                      <li><a href="">www.website.net</a>
+                      <li><a href="{{ site.baseurl }}">{{ site.owner.site }}</a>
                       </li>
                     </ul>
                   </div>
@@ -31,11 +31,11 @@
                       <form action="#" id="contactForm" novalidate>
                         <div class="input-field">
                           <input id="contact_name" type="text" name="contactName" class="validate input-box">
-                          <label for="contact_name" class="input-label">Name</label>
+                          <label for="contact_name" class="input-label">Your Name</label>
                         </div>
                         <div class="input-field">
                           <input id="email" type="email" name="contactEmail" class="validate input-box">
-                          <label for="email" class="input-label">Email</label>
+                          <label for="email" class="input-label">Your Email</label>
                         </div>
                         <div class="input-field">
                           <input id="subject" type="text" name="contactSubject" class="validate input-box">

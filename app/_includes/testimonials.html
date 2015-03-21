@@ -8,27 +8,29 @@
                 <div class="clearfix section-head testimonial-text">
                   <div class="col-sm-12">
                     <h2 class="title">testimonial</h2>
-                    <p class="regular-text">Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</p>
+                    <p class="regular-text">Here are some feedbacks we got from our clients and friends. I thank everyone for their kind words. These drives me and my team to deliver excellent service all the time.</p>
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="overflow-hidden">
                     <div class="row">
                       <div id="testimonialSlider" class="clearfix card-element-wrapper">
+                        {% for client in site.data.clients %}
                         <div class="col-sm-6 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
                           <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
                               <div class="card-img-wrap">
                                 <img class="activator" src="images/avatar.png" alt="">
-                                <p class="saying-about">Amazing theme, amazing code and especially amazing support! I Really love your work.</p>
+                                <p class="saying-about">{{ client.feedback }}</p>
                               </div>
                             </div>
                             <div class="card-content">
-                              <span class="card-title activator green-text">Jonh Smith -</span>
-                              <a href="#">CEO, Apple Inc</a>
+                              <span class="card-title activator green-text">{{ client.name }} -</span>
+                              <a href="#">{{ client.title }}</a>
                             </div>
                           </div>
                         </div> <!-- ./single testimonial box -->
+                        {% endfor %}
                         <div class="col-sm-6 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
                           <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">

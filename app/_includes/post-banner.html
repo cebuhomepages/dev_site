@@ -6,6 +6,8 @@
           <div class="clearfix blog-banner-text blog-single-banner">
             <div class="col-md-12">
               <h2 class="title">{{ page.title }}</h2>
+
+              {% if page.author %}
               <ul class="clearfix blog-post-meta">
                 <li>By <a href="#">{{ page.author }}</a>
                 </li>
@@ -20,6 +22,7 @@
                 {% endif %}
                </li>
               </ul>
+              {% endif %}
             </div>
           </div>
         </div>
