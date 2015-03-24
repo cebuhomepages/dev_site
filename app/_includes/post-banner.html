@@ -11,7 +11,7 @@
               <ul class="clearfix blog-post-meta">
                 <li>By <a href="#">{{ page.author }}</a>
                 </li>
-                <li>{{ page.date }}</li>
+                <li>{{ page.date | date_to_long_string  }}</li>
                 <li><a href="#">5 Comments</a>
                 </li>
                 <li>
