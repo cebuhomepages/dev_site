@@ -264,6 +264,14 @@ module.exports = function (grunt) {
           push: true
         }
       }
+      pages:{
+        options: {
+          remote: 'git@github.com:cebuhomepages/cebuhomepages.github.io.git,
+          branch: 'master',
+          commit: true,
+          push: true
+        }
+      }
     },
     jshint: {
       options: {
@@ -363,6 +371,12 @@ module.exports = function (grunt) {
     'buildcontrol'
     ]);
 
+  grunt.registerTask('prod', [
+    'check',
+    'test',
+    'build',
+    'buildcontrol:pages'
+    ]);
   grunt.registerTask('default', [
     'check',
     'test',
