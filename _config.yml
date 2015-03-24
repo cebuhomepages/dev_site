@@ -45,9 +45,12 @@ owner:
   job: Licensed Real Estate Broker
   service: I'm helping you Buy or Sell your property
   address: "Hernan Cortes Street, Casuntingan, Mandaue City, CEBU,PH"
-  phone: +639176312463
+  phone: "+639176312463"
+  phone_display: "0917 631 2463"
   email: luchelle@cebuhomepages.com
   site: www.cebuhomepages.com
+
+fbc-comments-firebase: https://chpcomments.firebaseio.com/
 
 logo: /images/logo.jpg
 

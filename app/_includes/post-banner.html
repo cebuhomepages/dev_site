@@ -12,8 +12,7 @@
                 <li>By <a href="#">{{ page.author }}</a>
                 </li>
                 <li>{{ page.date | date_to_long_string  }}</li>
-                <li><a href="#">5 Comments</a>
-                </li>
+                
                 <li>
                 {% if site.data.tags[tag] %}
                 <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ site.data.tags[tag].name }}</a>
