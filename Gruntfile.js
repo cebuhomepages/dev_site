@@ -294,6 +294,15 @@ module.exports = function (grunt) {
         ]
       }
     },
+    git_deploy:{
+      remote:{
+        options:{
+          url: 'git@github.com:cebuhomepages/cebuhomepages.github.io.git',
+          branch: 'master'
+        },
+        src: '<%= yeoman.dist %>'
+      }
+    },
     // https://github.com/robwierzbowski/generator-jekyllrb/issues/106
     // scsslint: {
     //   // See https://www.npmjs.org/package/grunt-scss-lint for options.
@@ -309,6 +318,11 @@ module.exports = function (grunt) {
       dist: [
         'sass:dist',
         'copy:dist'
+      ],
+      test:[
+        'sass:dist',
+        'copy:dist',
+        'jekyll:server'
       ]
     }
   });
@@ -334,9 +348,10 @@ module.exports = function (grunt) {
 
   // No real tests yet. Add your own.
   grunt.registerTask('test', [
-  //   'clean:server',
-  //   'concurrent:test',
-  //   'browserSync:test'
+     'clean:server',
+     'concurrent:test',
+     'browserSync:test',
+     
   ]);
 
   grunt.registerTask('check', [
@@ -379,4 +394,11 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('push', [
+    'clean:server',
+    'jekyll:dist',
+    'git_deploy:remote'
+  ]);
+
 };

@@ -8,9 +8,9 @@
                 <div class="clearfix nav-wrapper">
                   <a href="{{ site.baseurl }}" class="left brand-logo">
                     {% if site.logo %}
-                      <img src="{{ site.logo | prepend: site.baseurl }}" alt="">
+                      <img src="{{ site.logo | prepend: site.cdn }}" alt="">
                     {% else %}
-                      <img src="{{ '/images/logo.png' | prepend: site.baseurl }}" alt="">
+                      <img src="{{ '/images/logo.png' | prepend: site.cdn }}" alt="">
                     {% endif %}
                   </a>
                   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -38,9 +38,9 @@
                      <div class="profile-inner">
                         <div class="pp-container">
                             {% if site.profile_pic %}
-                            <img src="{{ site.profile_pic | prepend: site.baseurl }}" alt="">
+                            <img src="{{ site.profile_pic | prepend: site.cdn }}" alt="">
                             {% else %}
-                            <img src="{{ '/images/person.png' | prepend: site.baseurl }}" alt="">
+                            <img src="{{ '/images/person.png' | prepend: site.cdn }}" alt="">
                             {% endif %}
                         </div>
                         <h3>{{ site.owner.fullname }}</h3>

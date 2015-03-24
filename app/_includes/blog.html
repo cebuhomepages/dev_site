@@ -13,11 +13,11 @@
                 </div>
                 <div class="clearfix card-element-wrapper" id="blog-posts">
                   {% for blog in site.posts limit:3 %}
-                  {% assign card_image = "http://placehold.it/350x200" %}
+                  {% assign card_image = "//placehold.it/350x200" %}
 
                   {% if blog.images.card.preview %}
                     {% capture card_image %}
-                      {{ site.baseurl }}/images/350x200/{{ blog.images.card.preview }}
+                      {{ site.cdn }}/images/350x200/{{ blog.images.card.preview }}
                     {% endcapture %}
                   {% endif %}
                   <article class="col-sm-6 col-md-4 single-card-box single-post">
