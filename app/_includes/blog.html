@@ -13,12 +13,19 @@
                 </div>
                 <div class="clearfix card-element-wrapper" id="blog-posts">
                   {% for blog in site.posts limit:3 %}
+                  {% assign card_image = "http://placehold.it/350x200" %}
+
+                  {% if blog.images.card.preview %}
+                    {% capture card_image %}
+                      {{ site.baseurl }}/images/350x200/{{ blog.images.card.preview }}
+                    {% endcapture %}
+                  {% endif %}
                   <article class="col-sm-6 col-md-4 single-card-box single-post">
                     <div class="card wow fadeInUpSmall" data-wow-duration=".7s">
                       <div class="card-image">
                         <div class="card-img-wrap">
                           <div class="blog-post-thumb waves-effect waves-block waves-light">
-                            <a href="{{ blog.url }}"><img class="activator" src="http://placehold.it/350x200" alt="">
+                            <a href="{{ blog.url }}"><img class="activator" src="{{ card_image }}" alt="">
                             </a>
                           </div>
                           <div class="post-body">

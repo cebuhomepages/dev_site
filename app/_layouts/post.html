@@ -21,8 +21,8 @@ nav_list:
     description: I Want to Meet You
     
 ---
-	{% if page.banner-image %}
-		{% assign banner_image = page.banner-image %}
+	{% if page.images.post.banner %}
+		{% capture banner_image %}{{ site.baseurl }}/images/760x400/{{ page.images.post.banner }}{% endcapture %}
 	{% else %}
 		{% assign banner_image = "http://placehold.it/750x400" %}
 	{% endif %}

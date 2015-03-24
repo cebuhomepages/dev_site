@@ -4,6 +4,7 @@ is_blog: 	true
 categories: blog
 author:		Ian Cabigon
 tags:		['how-to', 'tips']
+published:  false
 
 thumbnail_type: 'video'
 ---
