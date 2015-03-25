@@ -1,0 +1,9 @@
+ 
+{% if site.fb.on %}
+ 	<meta property="og:type" content="article" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:description" content="{{ page.content | xml_escape | truncate: 300 }}" />
+    <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:image" content="{{ page.fb.image }}" />
+{% endif %}

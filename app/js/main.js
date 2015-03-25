@@ -690,6 +690,7 @@ $('#contactForm').on('submit', function(e){
 		data = $(this).serialize(),
 		name = $this.find('#contact_name'),
 		email = $this.find('#email'),
+		subject = $this.find('#subject'),
 		message = $this.find('#textarea1'),
 		loader = $this.find('.form-loader-area'),
 		submitBtn = $this.find('button, input[type="submit"]');
@@ -716,22 +717,33 @@ $('#contactForm').on('submit', function(e){
 			message.removeClass('valid').addClass('invalid');
 		}
 	}
+	
+    console.log( '_replyto: '+ email.val() );
+    console.log( '_subject: '+ subject.val());
+    console.log( 'message: ' + message.val());
 
 	$.ajax({
-		type: "POST",
-		url: "inc/sendEmail.php",
-		data: data
+		url: "//formspree.io/luchelle@cebuhomepages.com", 
+		method: "POST",
+		data: {
+			'_replyto': ''+ email.val(),
+			'_subject': ''+ subject.val(),
+			'message': '' + message.val()
+		},
+		dataType: "json"
 	}).done(function(res){
+		console.log('ajax call done');
+		console.log('response is: '+ res);
 
-		var response = JSON.parse(res);
-
-		if ( response.OK ) {
-			success(response);
+		if ( res.success ) {
+			console.log('response is OK');
+			success(res);
 		} else {
-			error(response);
+			console.log('response is ERROR');
+			error(res);
 		}
 
-
+		console.log('hiding spinner');
 		var hand = setTimeout(function(){
 			loader.hide();
 			submitBtn.removeAttr('disabled');
