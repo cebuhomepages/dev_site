@@ -1,12 +1,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>MaterialX - Material Design Personal Template</title>
-  <meta name="description" content="">
+  <title>{{ site.title }}{% if page.title %} | {{page.title}} {% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 
   <!-- Favicon-->
-  <link rel="shortcut icon" href="{{ '/images/favicon.png' | prepend: site.cdn }}" >
+  <link rel="shortcut icon" href="{{ '/images/favicon-96x96.png' | prepend: site.cdn }}" >
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="{{ '/css/normalize.css' | prepend: site.cdn }}">

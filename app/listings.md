@@ -4,7 +4,7 @@ layout:     post-with-cards
 title:      Your choices
 
 nav_list: 
-  - href:     "/"
+  - href:     "/about.html"
     scrollto: 
     icon:     fa-user
     description: About Luchelle
@@ -16,7 +16,7 @@ nav_list:
     scrollto: 
     icon:     fa-book
     description: I Need Advice
-  - href:     "/"
+  - href:     "/contact.html"
     scrollto: 
     icon:     fa-phone
     description: I Want to Meet You
