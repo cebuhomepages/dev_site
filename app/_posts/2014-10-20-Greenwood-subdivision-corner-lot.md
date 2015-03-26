@@ -3,6 +3,7 @@ layout: post
 
 author: Luchelle Ann Cabigon
 date: 2014-06-11
+star: 3
 title: "A Corner lot at Greenwood subdivision"
 
 images:

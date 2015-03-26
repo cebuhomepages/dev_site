@@ -396,6 +396,19 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('push', [
+    'clean',
+    // Jekyll cleans files from the target directory, so must run first
+    'jekyll:dist',
+    'concurrent:dist',
+    'useminPrepare',
+    'concat',
+    'cssmin',
+    'uglify',
+    'imagemin',
+    'svgmin',
+    'filerev',
+    'usemin',
+    'htmlmin',
     'clean:server',
     'jekyll:dist',
     'git_deploy:remote'

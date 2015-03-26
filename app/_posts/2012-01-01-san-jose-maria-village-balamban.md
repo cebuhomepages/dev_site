@@ -2,6 +2,7 @@
 layout: post
 categories: listing
 listing_type: lot
+star: 1
 
 ---
 

@@ -39,7 +39,9 @@
           <div class="row">
             <div class="col-sm-12">
               <ul class="clearfix protfolio-item" id="protfolio-msnry">
-              {% for listing in site.categories.listing %}
+
+              {% assign page_listings_sorted_by_stars = site.categories.listing | sort: 'star' | reverse %}
+              {% for listing in page_listings_sorted_by_stars %}
 
               {% assign popup_image = "//placehold.it/650x350" %}
               {% assign thumbnail_image = "//placehold.it/390x280" %}

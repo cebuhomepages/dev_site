@@ -2,6 +2,7 @@
 layout: post
 categories: listing
 listing_type: condo
+star: 3
 
 title: Park Centrale
 
