@@ -40,6 +40,10 @@ baseurl: "http://localhost:3000"
 cdn: "http://localhost:3000"
 #baseurl: "https://cebuhomepages.github.io"
 #cdn: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
+#baseurl: "https://cebuhomepages.com"
+#cdn: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
+#enforce_ssl: "cebuhomepages.com"
+
 owner:
   fullname: Luchelle Ann Cabigon
   nickname: Luchelle
@@ -62,3 +66,5 @@ copyright_date: 2015
 facebook: https://facebook.com/cebuhomepages
 twitter: https://twitter.com/cebuhomepages
 google_plus: https://google.com/+Cebuhomepages
+
+google_analytics: UA-48709253-1

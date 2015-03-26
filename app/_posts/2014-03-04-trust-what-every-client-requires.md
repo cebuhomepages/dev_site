@@ -3,6 +3,7 @@ layout: post
 
 author: Ian Cabigon
 date: 2014-03-04
+categories: blog
 title: "Trust: What every Client should require"
 
 tags:		['how-to', 'tips']

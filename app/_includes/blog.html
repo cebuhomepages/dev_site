@@ -12,7 +12,7 @@
                   </div>
                 </div>
                 <div class="clearfix card-element-wrapper" id="blog-posts">
-                  {% for blog in site.posts limit:3 %}
+                  {% for blog in site.categories.blog limit:3 %}
                   {% assign card_image = "//placehold.it/350x200" %}
 
                   {% if blog.images.card.preview %}
@@ -44,7 +44,7 @@
                 </div>
                 <div class="clearfix left-align">
                   <div class="col-sm-12">
-                    <a href="{{ site.baseurl }}/post-with-cards.html" class="waves-effect waves-light btn-large load-more">See More</a>
+                    <a href="{{ site.baseurl }}/advice.html" class="waves-effect waves-light btn-large load-more">See More</a>
                   </div>
                 </div>
               </div>

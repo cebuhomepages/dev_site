@@ -5,6 +5,7 @@ author: Luchelle Ann Cabigon
 date: 2014-04-14
 title: "What made me decide to become a Real Estate Practitioner? 
 "
+categories: blog
 
 tags:		['about-me']
 

@@ -4,6 +4,7 @@ layout: post
 author: Ian Cabigon
 date: 2014-06-11
 title: "A Partner, A Friend"
+categories: blog
 
 tags:		['how-to', 'tips']
 

@@ -3,6 +3,7 @@ layout: post
 
 author: Ian Cabigon
 date: 2014-03-03
+categories: blog
 
 tags:		['how-to', 'tips']
 

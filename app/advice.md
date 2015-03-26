@@ -23,7 +23,7 @@ nav_list:
 
 ---
 
-{% for post in site.posts %}
+{% for post in site.categories.blog %}
 <article class="col-xs-12 col-sm-12 col-md-6 single-card-box single-post">
   <div class="card">
     <div class="card-image">

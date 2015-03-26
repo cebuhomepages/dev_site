@@ -13,6 +13,7 @@ images:
   post:
     banner: blog-party.jpg
 
+categories: blog
 ---
 
 ## And We Are Live
