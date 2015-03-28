@@ -7,5 +7,5 @@
 - name: Lot only
   type: lot
 
-- name: Rent
-  type: rent
+#- name: Rent
+#  type: rent

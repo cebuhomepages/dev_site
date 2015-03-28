@@ -36,13 +36,13 @@ markdown: kramdown
 
 pygments: false
 
-#baseurl: "http://localhost:3000"
-#cdn: "http://localhost:3000"
+baseurl: "http://localhost:3000"
+cdn: "http://localhost:3000"
 #baseurl: "https://cebuhomepages.github.io"
 #cdn: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
-baseurl: "https://cebuhomepages.com"
-cdn: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
-enforce_ssl: "cebuhomepages.com"
+#baseurl: "http://cebuhomepages.com"
+#cdn: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
+#enforce_ssl: "cebuhomepages.com"
 
 owner:
   fullname: Luchelle Ann Cabigon
@@ -63,7 +63,10 @@ logo: /images/logo.jpg
 name: Cebu Home Pages
 copyright_date: 2015
 
+# Social Setup
 facebook: https://facebook.com/cebuhomepages
+fb:
+  app_id: 270751863008126
 twitter: https://twitter.com/cebuhomepages
 google_plus: https://google.com/+Cebuhomepages
 
