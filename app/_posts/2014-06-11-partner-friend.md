@@ -17,6 +17,8 @@ images:
   post:
     banner: decide.jpg
 
+description: We think about your interest, we listen to your thoughts. We try to understand your needs to make sure you have a sound decision and take the big leap forward. We are your partner, we are a friend, we'll give you all the advise you need. We are on your side.
+
 ---
 
 ## We got your back

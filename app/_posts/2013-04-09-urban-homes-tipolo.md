@@ -6,6 +6,8 @@ star: 3
 
 title: Urban Homes Tipolo
 
+description: Located in Tipolo, Mandaue City, Cebu near San Miguel Brewery and a few meters away from the National Road. With a breathable floor area of 25 square meters, all these Studio units come with a nicely finished hanging cabinets, sink, kitchen counter,sliding windows, tiled floors and 1 toilet & bath.
+
 ---
 
 ## Urban Living

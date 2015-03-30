@@ -6,7 +6,7 @@ date: 2014-06-11
 title: "Thank you for another award"
 categories: blog
 
-tags:		['awards', 'aboutme']
+tags:  ['awards', 'aboutme']
 
 images:
   home:
@@ -17,6 +17,7 @@ images:
   post:
     banner: 
 
+description: For two consecutive years of being part of your top performers, this inspires us to serve our clients better.
 ---
 
 ## Thank you for your trust

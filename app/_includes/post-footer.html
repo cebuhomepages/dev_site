@@ -1,11 +1,11 @@
 <div class="clearfix post-footer">
                   
-                  <div class="fb-like left post-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+                  <div class="fb-like left post-like" data-href="{{ site.baseurl }}{{ page.url }}" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
 
                   <ul class="clearfix right share-post">
                     <li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url }}"><i class="fa fa-facebook"></i> <span>SHARE</span></a>
                     </li>
-                    <li><a target="_blank" href="https://twitter.com/home?status={{ site.description | truncate: 80 | append: ' ' | append: site.url | append: site.baseurl | append: page.url | uri_escape }}"><i class="fa fa-twitter"></i> <span>TWEET</span></a>
+                    <li><a target="_blank" href="https://twitter.com/home?status={{ page.content | strip_html | truncate: 80 | append: ' ' | append: site.url | append: site.baseurl | append: page.url | uri_escape }}"><i class="fa fa-twitter"></i> <span>TWEET</span></a>
                     </li>
                     <li><a target="_blank" href="https://plus.google.com/share?url={{ page.url | prepend: site.baseurl | prepend: site.url }}"><i class="fa fa-google-plus"></i> <span>PLUS</span></a>
                     </li>

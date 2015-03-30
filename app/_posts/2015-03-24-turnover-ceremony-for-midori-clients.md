@@ -5,6 +5,8 @@ author: Luchelle Ann Cabigon
 date: 2015-03-24
 
 categories: blog
+
+description: A solemn unit blessing at Midori Residences. We are as excited as our dear clients for their new home. 
 ---
 
 ## Finally in Fruitition

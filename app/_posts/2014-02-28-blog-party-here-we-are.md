@@ -14,13 +14,13 @@ images:
     banner: blog-party.jpg
 
 categories: blog
+
+description: We consider ourselves as a start up real estate company based in Cebu. Under the hood, it's a team of two. 
 ---
 
 ## And We Are Live
 
-Hello Everyone. Hope we are not late in the blog party. Allow us to introduce ourselves. We are
-
-## Cebu Home Pages
+Hello Everyone. Hope we are not late in the blog party. Allow us to introduce ourselves. We are **Cebu Home Pages**
 
 We consider ourselves as a start up real estate company based in Cebu. Under the hood, it's a team of two. My wife [Luchelle Ann Cabigon](luchelle) and me, [Ian Cabigon](ian) building our little real state brokerage.
 

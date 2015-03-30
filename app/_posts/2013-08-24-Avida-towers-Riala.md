@@ -6,6 +6,8 @@ star: 5
 
 title: Avida Towers Riala
 
+description: Located at the Cebu IT Park, the city's most dynamic lifestyle district, Avida Towers Riala is mere steps away from the best the city has to offer: commercial and business centers and top schools and hospitals, among others. 
+
 ---
 
 > Here, you'll never forget the feel of grass beneath your feet. 

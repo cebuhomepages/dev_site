@@ -4,6 +4,7 @@ categories: listing
 listing_type: house_and_lot
 star: 5
 
+description: the newest modern mid-housing development in the south situated on a hill with friendly rolling terrain and wide breathtaking view of the Cebu coast. It is only 20 minutes away from SRP – future home of the SM Seaside City.
 ---
 
 Velmiro Heights — the newest modern mid-housing development in the south situated on a hill with friendly rolling terrain and wide breathtaking view of the Cebu coast. It is only 20 minutes away from SRP – future home of the SM Seaside City.

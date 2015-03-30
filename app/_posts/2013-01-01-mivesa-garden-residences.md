@@ -13,6 +13,7 @@ images:
   post:
     banner: mivesa-phase-1.jpg
 
+description: Designed to outfit the needs of the active Cebuano, the amenities of modern urban living are set amidst a relaxing environment to make your own home your easy respite at the end of a long day.
 ---
 
 ## Master Planned

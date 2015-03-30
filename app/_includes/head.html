@@ -2,9 +2,12 @@
   {% include secure-site.html %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ site.title }}{% if page.title %} | {{page.title}} {% endif %}</title>
-  <meta name="description" content="{{ site.description }}">
+  <title>{% if page.title %} {{page.title}} {% endif %}</title>
+  <meta name="description" content="{{ page.meta | strip_html | truncatewords:100 }}">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+  <link rel=”publisher” href=”https://plus.google.com/{{ site.google.page_id }}" />
+  <meta name="google-site-verification" content="{{ site.google.google-site-verification }}" />
 
   {% include fb-meta.html %}
 

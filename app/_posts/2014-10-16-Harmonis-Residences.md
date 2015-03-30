@@ -6,6 +6,7 @@ star: 3
 
 title: Harmonis Residences
 
+description: You can have your own private space where a zen-inspired tri-level water podium soothes your senses and stress floats away in the serene sound of smooth flowing water. 
 ---
 
 ## Harmonis Residences 

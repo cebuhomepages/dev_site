@@ -324,6 +324,33 @@ module.exports = function (grunt) {
         'copy:dist',
         'jekyll:server'
       ]
+    },
+
+    responsive_images:{
+      dist:{
+        options:{
+          engine: 'gm',
+          sizes:[{
+            width: 350,
+            height: 200
+          },{
+            width: 390,
+            height: 280
+          },{
+            width: 650,
+            height: 350
+          },{
+            width: 760,
+            height: 400
+          }]
+        },
+        files: [{
+          expand: true,
+          src: ['images/**/*.{gif,jpg,jpeg,png,svg,webp}'],
+          cwd: '<%= yeoman.app %>',
+          dest: '<%= yeoman.dist %>'
+        }]
+      }
     }
   });
 
@@ -412,6 +439,10 @@ module.exports = function (grunt) {
     'clean:server',
     'jekyll:dist',
     'git_deploy:remote'
+  ]);
+
+  grunt.registerTask('resimg',[
+    'responsive_images:dist'
   ]);
 
 };

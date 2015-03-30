@@ -18,6 +18,8 @@ images:
     preview: 
   post:
     banner: light-bulb.png
+
+description: Look into your monthly budget, how much you can give out. That way, it would be easy.
 ---
 
 A client of ours came up to us looking for a property. She is a young professional, seeking to buy her first property. Because it was her first time, she had no idea how much the average value of a condominium unit here in Cebu City is. 

@@ -15,10 +15,13 @@ images:
   post:
     banner: 
 
+description: Now being offered, A 178sqm Corner Lot in Greenwoods Subdivision Pit-os Talamban. Here's your chance to be a part of an exclusive community at a reasonable price!
+
 categories: 
    - blog
    - listing
 listing_type: lot
+
 
 ---
 

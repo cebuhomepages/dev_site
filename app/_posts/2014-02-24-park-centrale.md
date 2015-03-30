@@ -6,6 +6,7 @@ star: 3
 
 title: Park Centrale
 
+description: Park Centrale chose Cebu I.T. Park so you can be part of a community of thriving businesses, both local and global, with access to the city’s first class talents in mind
 ---
 
 ## SUPREME LOCATION

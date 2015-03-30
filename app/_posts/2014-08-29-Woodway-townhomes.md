@@ -5,6 +5,8 @@ listing_type: house_and_lot
 star: 5
 title: Woodway Townhomes
 
+description: A Modern Zen inspired middle income residential village. An 88 Modern Zen inspired housing project nested in a 9,920 sqm of prime residential lot. A Perfect investment! Conveniently situated 10 mins away from the much anticipated completion of the SM Seaside City Cebu.
+
 ---
 
 ## Woodway TownHomes 

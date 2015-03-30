@@ -17,6 +17,8 @@ images:
     preview: 
   post:
     banner: choosing-an-agent.jpg
+
+desciption: The most important thing is, make sure you get along with the agent. You don’t need to be best friends, but ultimately there should be some sort of rapport that allows for a successful business relationship.
 ---
 
 ## Mall Experience

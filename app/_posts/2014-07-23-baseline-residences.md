@@ -5,6 +5,8 @@ listing_type: condo
 
 title: Baseline Residences
 
+description: Generations of Cebuanos have shared fond memories in the Baseline Complex – karate classes, fun workouts and rock climbing at the Baseline gym, family parties at the Baseline restaurant, exciting matches at the tennis courts, and even grand street parties during the Sinulog festivities. Baseline provides several lifestyle conveniences in the best possible location – right in the heart of Midtown Cebu.
+
 ---
 
 ## A Superb location
