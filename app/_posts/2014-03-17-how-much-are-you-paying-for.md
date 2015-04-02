@@ -10,14 +10,18 @@ tags:		['how-to', 'tips']
 title: "How much are you paying for?"
 
 
+fb:
+  image: stock-money-650x350.jpg         #650x350
+
 images:
   home:
-    popup: 
-    thumbnail: 
+    popup: stock-money-650x350.jpg       #650x350
+    thumbnail: stock-money-390x280.jpg   #390x280
   card:
-    preview: 
+    preview: stock-money-350x200.jpg     #350x200
   post:
-    banner: light-bulb.png
+    banner: stock-money-760x400.jpg      #760x400
+
 
 description: Look into your monthly budget, how much you can give out. That way, it would be easy.
 ---

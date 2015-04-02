@@ -8,11 +8,18 @@ description: Hi I'm Luchelle, a Licensed Real Estate Broker. I'm here to help yo
 
 If you'd like to get in touch with me, it's extremely easy:
 
-## Here is my full contact details.
+### Here is my full contact details.
 
-Email: You can [email me using this link](mailto:luchelle@cebuhomepages.com)
-Telephone: 09176312463
-Telephone: +63 917 631 2463(from outside Philippines)
-Facebook: [https://fb.me/cebuhomepages](https://fb.me/cebuhomepages)
+Email: You can [email me using this link][email]
 
-Or use this form below
+Telephone: [09176312463][phone_loc]
+
+Telephone: [+63 917 631 2463][phone_int] from outside Philippines
+
+Facebook: [https://fb.me/cebuhomepages][fbpage]
+
+
+[email]: mailto:luchelle@cebuhomepages.com
+[fbpage]: https://fb.me/cebuhomepages
+[phone_loc]: tel:09176312463
+[phone_int]: tel:+639176312463

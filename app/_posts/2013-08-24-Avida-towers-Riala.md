@@ -4,6 +4,18 @@ categories: listing
 listing_type: condo
 star: 5
 
+fb:
+  image: avida-blog-650x350.png         #650x350
+
+images:
+  home:
+    popup: avida-card-650x350.png       #650x350
+    thumbnail: avida-card-390x280.png   #390x280
+  card:
+    preview: avida-card-350x200.png     #350x200
+  post:
+    banner: avida-blog-750x400.png      #750x400
+
 title: Avida Towers Riala
 
 description: Located at the Cebu IT Park, the city's most dynamic lifestyle district, Avida Towers Riala is mere steps away from the best the city has to offer: commercial and business centers and top schools and hospitals, among others. 

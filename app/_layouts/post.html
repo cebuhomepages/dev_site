@@ -22,7 +22,7 @@ nav_list:
     
 ---
 	{% if page.images.post.banner %}
-		{% capture banner_image %}{{ site.cdn }}/images/760x400/{{ page.images.post.banner }}{% endcapture %}
+		{% capture banner_image %}{{ site.img_host }}/images/{{ page.images.post.banner }}{% endcapture %}
 	{% else %}
 		{% assign banner_image = "//placehold.it/750x400" %}
 	{% endif %}

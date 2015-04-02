@@ -4,6 +4,18 @@ categories: listing
 listing_type: lot
 star: 1
 
+fb:
+  image: sanjosetalisay-blog-650x350.jpg         #650x350
+
+images:
+  home:
+    popup: sanjosetalisay-card-650x350.jpg       #650x350
+    thumbnail: sanjosetalisay-card-390x280.jpg   #390x280
+  card:
+    preview: sanjosetalisay-card-350x200.jpg     #350x200
+  post:
+    banner: sanjosetalisay-blog-760x400.jpg      #760x400
+
 description: Welcome to San Josemaria Village – Talisay. Experience premium quality homes that satisfy all your desires and expectations, live in safety, security, comfort and style with six elegant and functional house models namely
 
 ---

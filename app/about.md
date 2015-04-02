@@ -2,11 +2,23 @@
 layout: post
 title: About Luchelle Ann Cabigon
 
+fb:
+  image: person-650x350.jpg         #650x350
+
+images:
+  home:
+    popup: person-650x350.jpg       #650x350
+    thumbnail: person-390x280.jpg   #390x280
+  card:
+    preview: person-350x200.jpg     #350x200
+  post:
+    banner: person-760x400.jpg      #760x400
+
 ---
 
 Thanks for stopping and checking me out.
 
-My name is Luchelle Ann Joren-Cabigon and I have worked in Real Estates since 2012. I've got my PRC License since 2009, but focused on practicing my profession a year or two later.
+My name is Luchelle Ann Joren-Cabigon and I have worked in Real Estates since 2011. I've got my PRC License since 2009, but focused on practicing my profession a year or two later.
 
 My clients have ranged from young professionals and young at heart investors, to close friends who are into real estate investing. My clients, amazingly turned out to become friends of mine too.
 

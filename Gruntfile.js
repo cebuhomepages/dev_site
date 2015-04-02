@@ -18,7 +18,9 @@ module.exports = function (grunt) {
     // Configurable paths
     yeoman: {
       app: 'app',
-      dist: 'dist'
+      dist: 'dist',
+      resp: 'resp',
+      raw: 'raw'
     },
     watch: {
       sass: {
@@ -172,7 +174,7 @@ module.exports = function (grunt) {
           collapseWhitespace: true,
           collapseBooleanAttributes: true,
           removeAttributeQuotes: true,
-          removeRedundantAttributes: true
+          removeRedundantAttributes: false
         },
         files: [{
           expand: true,
@@ -205,7 +207,19 @@ module.exports = function (grunt) {
           src: '**/*.{jpg,jpeg,png}',
           dest: '<%= yeoman.dist %>'
         }]
+      },
+      resp: {
+        options: {
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.raw %>',
+          src: '**/*x*.{jpg,jpeg,png}',
+          dest: '<%= yeoman.resp %>'
+        }]
       }
+
     },
     svgmin: {
       dist: {
@@ -227,7 +241,6 @@ module.exports = function (grunt) {
             // Jekyll processes and moves HTML and text files.
             // Usemin moves CSS and javascript inside of Usemin blocks.
             // Copy moves asset files and directories.
-            'images/**/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
             '!**/_*{,/**}'
@@ -332,23 +345,31 @@ module.exports = function (grunt) {
           engine: 'gm',
           sizes:[{
             width: 350,
-            height: 200
+            height: 200,
+            aspectRatio: false
           },{
             width: 390,
-            height: 280
+            height: 280,
+            aspectRatio: false
           },{
             width: 650,
-            height: 350
+            height: 350,
+            aspectRatio: false
           },{
             width: 760,
-            height: 400
+            height: 400,
+            aspectRatio: false
+          },,{
+            width: 360,
+            height: 360,
+            aspectRatio: false
           }]
         },
         files: [{
           expand: true,
-          src: ['images/**/*.{gif,jpg,jpeg,png,svg,webp}'],
-          cwd: '<%= yeoman.app %>',
-          dest: '<%= yeoman.dist %>'
+          src: ['**/*.{gif,jpg,jpeg,png,svg,webp}'],
+          cwd: '<%= yeoman.raw %>',
+          dest: '<%= yeoman.dist %>/images'
         }]
       }
     }
@@ -427,22 +448,15 @@ module.exports = function (grunt) {
     // Jekyll cleans files from the target directory, so must run first
     'jekyll:dist',
     'concurrent:dist',
-    'useminPrepare',
-    'concat',
-    'cssmin',
-    'uglify',
-    'imagemin',
-    'svgmin',
-    'filerev',
-    'usemin',
     'htmlmin',
-    'clean:server',
-    'jekyll:dist',
+    //'responsive_images:dist',
+    //'imagemin:dist',
     'git_deploy:remote'
   ]);
 
   grunt.registerTask('resimg',[
-    'responsive_images:dist'
+    'responsive_images:dist',
+    'imagemin:resp'
   ]);
 
 };

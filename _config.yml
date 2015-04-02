@@ -41,6 +41,8 @@ pygments: false
 #baseurl: "https://cebuhomepages.github.io"
 #cdn: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
 baseurl: "https://cebuhomepages.com"
+#img_host: "https://cebuhomepages.com"
+img_host: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
 cdn: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
 enforce_ssl: "cebuhomepages.com"
 
@@ -61,6 +63,7 @@ owner:
 fbc-comments-firebase: https://chpcomments.firebaseio.com/
 
 logo: /images/logo.jpg
+profile_pic: /images/person-360x360.jpg
 
 name: Cebu Home Pages
 copyright_date: 2015

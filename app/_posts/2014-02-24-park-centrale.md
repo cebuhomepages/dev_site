@@ -4,6 +4,18 @@ categories: listing
 listing_type: condo
 star: 3
 
+fb:
+  image: parkcentrale-blog-650x350.jpg         #650x350
+
+images:
+  home:
+    popup: parkcentrale-blog-650x350.jpg       #650x350
+    thumbnail: parkcentrale-blog-390x280.jpg   #390x280
+  card:
+    preview: parkcentrale-blog-350x200.jpg     #350x200
+  post:
+    banner: parkcentrale-blog-760x400.jpg      #750x400
+
 title: Park Centrale
 
 description: Park Centrale chose Cebu I.T. Park so you can be part of a community of thriving businesses, both local and global, with access to the city’s first class talents in mind

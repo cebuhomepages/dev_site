@@ -4,6 +4,18 @@ categories: listing
 listing_type: condo
 star: 5
 
+fb:
+  image: baselinecentrale-blog-650x350.jpg         #650x350
+
+images:
+  home:
+    popup: baselinecentrale-card-650x350.jpg       #650x350
+    thumbnail: baselinecentrale-card-390x280.jpg   #390x280
+  card:
+    preview: baselinecentrale-card-350x200.jpg     #350x200
+  post:
+    banner: baselinecentrale-blog-760x400.jpg      #760x400
+
 title: Baseline Centrale
 
 description: Base Line Centrale is the newest and highly awaited Multi-Use Development in Uptown Cebu. Located in the baseline Complex, along Juan Osmena St., Cebu City - This project aspires to provide solutions to the growing demand for commercial, office, and residential space in the area.

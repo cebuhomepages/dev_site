@@ -4,14 +4,17 @@ categories: listing
 listing_type: condo
 star: 5
 
+fb:
+  image: mivesa-blog-650x350.jpg         #650x350
+
 images:
   home:
-    popup: mivesa-aerial-front.jpg
-    thumbnail: mivesa.jpg
+    popup: mivesa-card-650x350.jpg       #650x350
+    thumbnail: mivesa-card-390x280.jpg   #390x280
   card:
-    preview: trivesa-cb.jpg
+    preview: mivesa-card-350x200.jpg     #350x200
   post:
-    banner: mivesa-phase-1.jpg
+    banner: mivesa-blog-760x400.jpg      #760x400
 
 description: Designed to outfit the needs of the active Cebuano, the amenities of modern urban living are set amidst a relaxing environment to make your own home your easy respite at the end of a long day.
 ---

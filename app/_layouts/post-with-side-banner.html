@@ -30,12 +30,14 @@ nav_list:
 
           <!-- post container start-->
             <div class="col-sm-8">
-              <article class="single-post-page">
+              <article class="single-post-page" style="margin-top: 25px;">
+                {% if banner_image %}
                 <div class="thumb-wrap">
                   <img src="{{ banner_image }}" alt="">
                 </div>
+                {% endif %}
                 <div class="single-post-content">
-					{{ content }}
+					         {{ content }}
                 </div>
               </article>
             </div> <!-- ./post container end-->
@@ -50,24 +52,24 @@ nav_list:
         <div class="row">
           <div class="contact-inner">
             <div class="col-sm-12 card-box-wrap">
-                <!-- Contact Form start -->
+                               <!-- Contact Form start -->
                   <div class="col-sm-5">
                     <div class="clearfix card-panel grey lighten-5 cform-wrapper">
                       <form action="#" id="contactForm" novalidate>
                         <div class="input-field">
-                          <input id="contact_name" type="text" name="contactName" class="validate input-box">
+                          <input id="contact_name" type="text" style="color:black" name="name" class="validate input-box">
                           <label for="contact_name" class="input-label">Your Name</label>
                         </div>
                         <div class="input-field">
-                          <input id="email" type="email" name="contactEmail" class="validate input-box">
+                          <input id="email" type="email" name="_replyto" style="color:black" class="validate input-box">
                           <label for="email" class="input-label">Your Email</label>
                         </div>
                         <div class="input-field">
-                          <input id="subject" type="text" name="contactSubject" class="validate input-box">
+                          <input id="subject" type="text" name="contactSubject" class="validate input-box" style="color:black">
                           <label for="subject" class="input-label">Subject</label>
                         </div>
                         <div class="input-field textarea-input">
-                          <textarea id="textarea1" name="contactMessage" class="validate materialize-textarea" style="height: 22px;"></textarea>
+                          <textarea id="textarea1" name="contactMessage" class="validate materialize-textarea" style="height: 22px;color:black;"></textarea>
                           <label for="textarea1" class="input-label">Message</label>
                         </div>
                         <div class="input-field submit-wrap clearfix">
@@ -90,8 +92,8 @@ nav_list:
       <div class="section-call-to-area">
         <div class="container">
           <div class="row">
-            <a href="#home" class="btn-floating btn-large button-middle section-call-to-btn animated btn-up btn-hidden" data-section="#home">
-              <i class="mdi-navigation-expand-less"></i>
+            <a href="{{ site.baseurl }}" class="btn-floating btn-large button-middle section-call-to-btn animated btn-up btn-hidden" data-section="#all-posts">
+              <i class="mdi-action-home"></i>
             </a>
           </div>
         </div>

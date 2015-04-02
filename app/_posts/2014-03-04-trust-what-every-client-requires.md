@@ -8,14 +8,19 @@ title: "Trust: What every Client should require"
 
 tags:		['how-to', 'tips']
 
+
+fb:
+  image: stock-trust2-650x350.jpg         #650x350
+
 images:
   home:
-    popup: 
-    thumbnail: 
+    popup: stock-trust2-650x350.jpg       #650x350
+    thumbnail: stock-trust2-390x280.jpg   #390x280
   card:
-    preview: 
+    preview: stock-trust2-350x200.jpg     #350x200
   post:
-    banner: trust.jpg
+    banner: stock-trust2-760x400.jpg      #760x400
+
 
 description: There are 3 things you need to be looking for in your agent: They should demonstrate professionalism; They should clearly explain to you the product and what are the benefits you can get from it; They should Earn your trust.
 ---

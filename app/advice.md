@@ -27,6 +27,6 @@ nav_list:
 <article class="col-xs-12 col-sm-12 col-md-6 single-card-box single-post">
   {% assign post_url = post.url | prepend: site.baseurl %}
   {% assign post_content = post.content | strip_html %}
-  {% include app-card.html url=post_url thumbnail_type=post.thumbnail_type description=post_content title=post.title %}
+  {% include app-card.html url=post_url thumbnail=post.images.card.preview thumbnail_type=post.thumbnail_type description=post_content title=post.title %}
 </article> <!--./single post-->
 {% endfor %}

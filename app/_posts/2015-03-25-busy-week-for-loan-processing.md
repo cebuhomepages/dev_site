@@ -4,6 +4,18 @@ layout: post
 author: Luchelle Ann Cabigon
 date: 2015-03-25
 
+fb:
+  image: stock-coffee-650x350.jpg         #650x350
+
+images:
+  home:
+    popup: stock-coffee-650x350.jpg       #650x350
+    thumbnail: stock-coffee-390x280.jpg   #390x280
+  card:
+    preview: stock-coffee-350x200.jpg     #350x200
+  post:
+    banner: stock-coffee-760x400.jpg      #760x400
+
 title: A busy week for Loan Processing
 
 categories: blog

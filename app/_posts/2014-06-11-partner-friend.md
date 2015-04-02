@@ -8,14 +8,17 @@ categories: blog
 
 tags:		['how-to', 'tips']
 
+fb:
+  image: stock-friend-650x350.jpg         #650x350
+
 images:
   home:
-    popup: 
-    thumbnail: 
+    popup: stock-friend-650x350.jpg       #650x350
+    thumbnail: stock-friend-390x280.jpg   #390x280
   card:
-    preview: 
+    preview: stock-friend-350x200.jpg     #350x200
   post:
-    banner: decide.jpg
+    banner: stock-friend-760x400.jpg      #760x400
 
 description: We think about your interest, we listen to your thoughts. We try to understand your needs to make sure you have a sound decision and take the big leap forward. We are your partner, we are a friend, we'll give you all the advise you need. We are on your side.
 

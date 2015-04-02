@@ -47,12 +47,12 @@
               {% assign thumbnail_image = "//placehold.it/390x280" %}
               {% if listing.images.home.popup %}
                 {% capture popup_image %}
-                  {{ site.cdn }}/images/650x350/{{ listing.images.home.popup }} 
+                  {{ site.img_host }}/images/{{ listing.images.home.popup }} 
                 {% endcapture %}
               {% endif %}
               {% if listing.images.home.thumbnail %}
                 {% capture thumbnail_image %}
-                  {{ site.cdn }}/images/390x280/{{ listing.images.home.thumbnail }}
+                  {{ site.img_host }}/images/{{ listing.images.home.thumbnail }}
                 {% endcapture %}
               {% endif %}
               <!-- Single Portfolio-->

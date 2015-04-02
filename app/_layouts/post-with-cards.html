@@ -2,13 +2,13 @@
 layout: default
 is_blog: true
 ---
-	{% if page.banner-image %}
-		{% assign banner_image = page.banner-image %}
+	{% if page.images.card.preview %}
+		{% assign banner_image = page.images.card.preview %}
 	{% else %}
 		{% assign banner_image = "//placehold.it/750x400" %}
 	{% endif %}
 
-    {% include post-banner.html %}
+    {% include post-banner.html banner=banner_image %}
 
     <!-- Blog Post Container -->
     <section class="bottom-50 root-sec grey lighten-5 blogpage-posts-wrap">

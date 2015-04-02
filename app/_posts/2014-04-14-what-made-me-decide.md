@@ -9,14 +9,19 @@ categories: blog
 
 tags:		['about-me']
 
+
+fb:
+  image: me-n-mama-650x350.jpeg         #650x350
+
 images:
   home:
-    popup: 
-    thumbnail: 
+    popup: me-n-mama-650x350.jpeg       #650x350
+    thumbnail: me-n-mama-390x280.jpeg   #390x280
   card:
-    preview: 
+    preview: me-n-mama-350x200.jpeg     #350x200
   post:
-    banner: mom.jpeg
+    banner: me-n-mama-760x400.jpeg      #760x400
+
 
 description: We think about your interest, we listen to your thoughts. We try to understand your needs to make sure you have a sound decision and take the big leap forward. We are your partner, we are a friend, we'll give you all the advise you need. We are on your side.
 ---

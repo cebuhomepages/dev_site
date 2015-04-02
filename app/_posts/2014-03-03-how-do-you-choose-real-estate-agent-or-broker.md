@@ -5,18 +5,23 @@ author: Ian Cabigon
 date: 2014-03-03
 categories: blog
 
+
+fb:
+  image: stock-trust-650x350.jpg         #650x350
+
+images:
+  home:
+    popup: stock-trust-650x350.jpg       #650x350
+    thumbnail: stock-trust-390x280.jpg   #390x280
+  card:
+    preview: stock-trust-350x200.jpg     #350x200
+  post:
+    banner: stock-trust-760x400.jpg      #760x400
+
 tags:		['how-to', 'tips']
 
 title: How do you choose a Real Estate Agent or Broker 
 
-images:
-  home:
-    popup: 
-    thumbnail: 
-  card:
-    preview: 
-  post:
-    banner: choosing-an-agent.jpg
 
 desciption: The most important thing is, make sure you get along with the agent. You don’t need to be best friends, but ultimately there should be some sort of rapport that allows for a successful business relationship.
 ---

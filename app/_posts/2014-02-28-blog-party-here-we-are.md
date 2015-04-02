@@ -4,14 +4,17 @@ layout: post
 author: Ian Cabigon
 date: 2014-02-28
 
+fb:
+  image: stock-pen4-650x350.jpg         #650x350
+
 images:
   home:
-    popup: 
-    thumbnail: 
+    popup: stock-pen4-650x350.jpg       #650x350
+    thumbnail: stock-pen4-390x280.jpg   #390x280
   card:
-    preview: 
+    preview: stock-pen4-350x200.jpg     #350x200
   post:
-    banner: blog-party.jpg
+    banner: stock-pen4-760x400.jpg      #760x400
 
 categories: blog
 

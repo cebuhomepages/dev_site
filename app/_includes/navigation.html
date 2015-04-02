@@ -38,9 +38,9 @@
                      <div class="profile-inner">
                         <div class="pp-container">
                             {% if site.profile_pic %}
-                            <img src="{{ site.profile_pic | prepend: site.cdn }}" alt="">
+                            <img src="{{ site.profile_pic | prepend: site.img_host }}" alt="">
                             {% else %}
-                            <img src="{{ '/images/person.png' | prepend: site.cdn }}" alt="">
+                            <img src="{{ '/images/person.png' | prepend: site.img_host }}" alt="">
                             {% endif %}
                         </div>
                         <h3>{{ site.owner.fullname }}</h3>
@@ -61,12 +61,10 @@
                     {% endfor %}
                   </ul>
                   <ul id="dropdown1" class="inline-menu submenu-ul dropdown-content">
-                    <li>Home</li>
-                    <li><a href="blog.html">All Blog</a>
+                    <li><a href="{{ site.baseurl }}">Home</a></li>
+                    <li><a href="{{ site.baseurl }}/listings.html">All Listings</a>
                     </li>
-                    <li><a href="blog-with-sidebar.html">Blog with Sidebar</a>
-                    </li>
-                    <li><a href="single.html">Single Blog</a>
+                    <li><a href="{{ site.baseurl }}/advice.html">All Blogs</a>
                     </li>
                   </ul>
 

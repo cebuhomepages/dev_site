@@ -17,7 +17,7 @@
 
                   {% if blog.images.card.preview %}
                     {% capture card_image %}
-                      {{ site.cdn }}/images/350x200/{{ blog.images.card.preview }}
+                      {{ site.img_host }}/images/{{ blog.images.card.preview }}
                     {% endcapture %}
                   {% endif %}
                   <article class="col-sm-6 col-md-4 single-card-box single-post">
