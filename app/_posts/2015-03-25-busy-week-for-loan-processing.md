@@ -30,4 +30,4 @@ Most of the projects we've been working on are now turning over to our clients. 
 
 ## Busy and Excited
 
-It's an exciting time for most, the idea that the key to your home/unit will be given to you in the coming months is an exciting feeling. It's humbling that I am able to witness smiles I see when they hear the good news.
+It's an exciting time for most, the idea that the key to your home/unit will be given to you in the coming months is an exciting feeling. It's humbling that I am able to witness smiles when they hear the good news.

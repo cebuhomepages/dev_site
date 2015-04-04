@@ -40,10 +40,10 @@ pygments: false
 #cdn: "http://localhost:3000"
 #baseurl: "https://cebuhomepages.github.io"
 #cdn: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
-baseurl: "https://cebuhomepages.com"
-#img_host: "https://cebuhomepages.com"
-img_host: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
-cdn: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
+baseurl: "https://www.cebuhomepages.com"
+img_host: "https://dl.dropboxusercontent.com/u/39191093"
+#img_host: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
+cdn: "https://dl.dropboxusercontent.com/u/39191093"
 enforce_ssl: "cebuhomepages.com"
 
 title: Cebu Home Pages
@@ -72,6 +72,12 @@ copyright_date: 2015
 facebook: https://facebook.com/cebuhomepages
 fb:
   app_id: 270751863008126
+  on: true
+  og_image: /images/logo.jpg # Default image for Open Graph tag
+  og_image_type: image/jpg
+  og_image_width: 300
+  og_image_height: 300
+
 twitter: https://twitter.com/cebuhomepages
 google_plus: https://google.com/+Cebuhomepages
 

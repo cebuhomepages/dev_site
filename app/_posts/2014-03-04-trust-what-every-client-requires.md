@@ -22,7 +22,7 @@ images:
     banner: stock-trust2-760x400.jpg      #760x400
 
 
-description: There are 3 things you need to be looking for in your agent: They should demonstrate professionalism; They should clearly explain to you the product and what are the benefits you can get from it; They should Earn your trust.
+description: "There are 3 things you need to be looking for in your agent: They should demonstrate professionalism; They should clearly explain to you the product and what are the benefits you can get from it; They should Earn your trust."
 ---
 
 ## Are you aware?

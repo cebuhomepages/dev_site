@@ -383,14 +383,6 @@ $(document).ready(function($){
 	}());
 
 
-
-
-
-
-
-
-
-
 	// Map
 	var mapStyle = [
 	    {
@@ -681,7 +673,6 @@ if ( $countNumb.length > 0 ) {
 		time: 1700
 	});
 }
-
 
 
 $('#contactForm').on('submit', function(e){

@@ -15,15 +15,22 @@
   <link rel="shortcut icon" href="{{ '/images/favicon-96x96.png' | prepend: site.cdn }}" >
 
   <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ '/css/normalize.css' | prepend: site.cdn }}">
   <link rel="stylesheet" href="{{ '/fonts/font-awesome/css/font-awesome.min.css' | prepend: site.cdn }}">
   <link rel="stylesheet" href="{{ '/libs/materialize/css/materialize.min.css' | prepend: site.cdn }}" media="screen,projection" />
+  <link rel="stylesheet" href="{{ '/css/bootstrap.css' | prepend: site.cdn }}" media="screen,projection" />
+
+  <link rel="stylesheet" href="{{ '/css/animate.min.css' | prepend: site.cdn }}" media="screen,projection" />
   <link rel="stylesheet" href="{{ '/libs/sweetalert/sweet-alert.css' | prepend: site.cdn }}" media="screen,projection" />
 
   <link rel="stylesheet" href="{{ '/libs/owl-carousel/owl.carousel.css' | prepend: site.cdn }}" media="screen,projection" />
   <link rel="stylesheet" href="{{ '/libs/owl-carousel/owl.transitions.css' | prepend: site.cdn }}" media="screen,projection" />
   <link rel="stylesheet" href="{{ '/libs/owl-carousel/owl.theme.css' | prepend: site.cdn }}" media="screen,projection" />
-  <link rel="stylesheet" href="{{ '/css/output.css' | prepend: site.cdn }}">
 
+  <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.cdn }}">
+  <link rel="stylesheet" href="{{ '/css/responsive.css' | prepend: site.cdn }}">
+
+  
   {% if page.is_blog %}
     <link rel="stylesheet" href="{{ '/css/blog.css' | prepend: site.cdn }}">
   {% endif %}
