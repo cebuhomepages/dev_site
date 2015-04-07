@@ -21,11 +21,11 @@ images:
 
 title: 5 Questions you should ask your Real Estate Agent before you buy from them.
 
-description: Say you met a real estate agent and was totally sold by a condominium he's trying to sell. Before you say yes, ask these 5 questions first. This will determine if you'll be satisfied with her service to you.
+description: Say you met a real estate agent and you were totally sold by a condominium she's trying to sell. Before you say yes, ask these 5 questions first. This will determine if you'll be satisfied with her service to you.
 
 ---
 
-Knowing your real estate agent, aside from the property he/she is selling, is critical to your buying satisfcation. Your chosen real estate could make or break your decision to buy a home. 
+Knowing your real estate agent, aside from the property he/she is selling, is critical to your buying satisfaction. Your chosen real estate could make or break your decision to buy a home. 
 
 > One of the biggest issues I have found is that so many consumers think that all Realtors do the same things to sell homes. This could not be further from the truth!
 
