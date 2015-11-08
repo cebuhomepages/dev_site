@@ -39,3 +39,10 @@ Here's a detailed presentation about this project. Check [this out](http://goo.g
 Cebu Land Masters, Inc. is one of our best partners. They develop projects that are top of the line and easily rank one the bests of Cebu. We are confident in their quality delivery. We highly recommend their projects to our clients.
 
 {% include quote.html quote="Cebu Land Masters, Inc. is one of our best partners. They develop projects that are top of the line and easily rank one the bests of Cebu." %}
+
+## Connect with me for details
+I have some more information about this project. Maybe we can meet and share to you some more information about it. It's [easier than ever to reach me](communication).
+
+{% include connect-buttons.html %}
+
+[communication]: https://www.cebuhomepages.com/blog/2015/10/01/how-connect-with-your-broker.html

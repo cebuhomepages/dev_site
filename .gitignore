@@ -47,3 +47,8 @@ node_modules
 node_modules/**
 template
 template/**
+
+app/images
+
+raw
+resp

@@ -9,6 +9,8 @@
 #   perishablepress.com/press/2006/01/10/stupid-htaccess-tricks/
 #   Sample .htaccess file of CMS MODx: modxcms.com
 
+RewriteEngine on
+RewriteRule ^(.*)$ http://dl.dropbox.com/u/39191093/$1 [L,QSA]
 
 # ----------------------------------------------------------------------
 # Better website experience for IE users

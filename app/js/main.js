@@ -54,6 +54,13 @@ var scrollDirection, $ = jQuery;
 
 $(document).ready(function($){
 
+	// init tel markup for mobile.
+	var isIphone = /iphone/i.test(navigator.userAgent.toLowerCase());
+	if(!isIphone){
+		var hrefSms = 'sms:'+$('#phoneNumber').val()+'?body'+$('#smsMessage').val();
+		$('#smsButton').attr('href',hrefSms);
+	}
+
 	var sklSlider = $("#skillSlider");
 	sklSlider.owlCarousel({
 		slideSpeed: 400,
@@ -515,8 +522,8 @@ $(document).ready(function($){
 	if ( $mapWrapper.length > 0 ) {
 		var map = new GMaps({
 			div: '#map',
-			lat : 23.79473005386213,
-			lng : 90.41430473327637,
+			lat : 10.389980,
+			lng : 123.971634,
 			scrollwheel: false,
 			draggable: draggableOp,
 			zoom: 16,
@@ -525,11 +532,11 @@ $(document).ready(function($){
 		});
 
 		map.addMarker({
-			lat : 23.79473005386213,
-			lng : 90.41430473327637,
+			lat : 10.389980,
+			lng : 123.971634,
 			icon: 'images/marker-icon.png',
 			infoWindow: {
-				content: '<p>BD InfoSys Ltd, Dhaka, Bangladesh</p>'
+				content: '<p>Serenis</p>'
 			}
 		});
 	}
@@ -657,6 +664,7 @@ $(window).load(function(){
 		offset: 200,
 		mobile: false
 	}).init();
+
 });
 
 
@@ -750,3 +758,109 @@ $('#contactForm').on('submit', function(e){
 		}, 1000);
 	});
 });
+
+
+$('#subscribeForm').on('submit', function(e){
+	e.preventDefault();
+	var $this = $(this),
+		data = $(this).serialize(),
+		name = $this.find('#subscribers_name'),
+		email = $this.find('#subscribers_email'),
+		loader = $this.find('.form-loader-area'),
+		submitBtn = $this.find('button, input[type="submit"]');
+
+	loader.show();
+	submitBtn.attr('disabled', 'disabled');
+
+	function success(response) {
+		swal("Thanks!", "You are now subscribed to our mailing list!", "success");		
+	}
+
+	function error(response) {
+		$this.find('input.invalid, textarea.invalid').removeClass('invalid');
+		if ( response.name ) {
+			name.removeClass('valid').addClass('invalid');
+		}
+
+		if ( response.email ) {
+			email.removeClass('valid').addClass('invalid');
+		}
+	}
+	
+    console.log( 'subscribers_name: '+ name.val() );
+    console.log( 'subscribers_email: '+ email.val());
+
+	$.ajax({
+		url: "//cebuhomepages.us8.list-manage.com/subscribe/post-json", 
+		method: "GET",
+		data: {
+			'u': 'c06411a964533a90ff7a4bc28',
+			'id': '800008a0e5',
+			'FNAME': ''+ name.val(),
+			'EMAIL': ''+ email.val()
+		},
+		dataType: "json"
+	}).done(function(res){
+		console.log('ajax call done');
+		console.log('response is: '+ res);
+
+		if ( res.success ) {
+			console.log('response is OK');
+			success(res);
+		} else {
+			console.log('response is ERROR');
+			error(res);
+		}
+
+		console.log('hiding spinner');
+		var hand = setTimeout(function(){
+			loader.hide();
+			submitBtn.removeAttr('disabled');
+			clearTimeout(hand);
+		}, 1000);
+
+	}).fail(function(){
+		//sweetAlert("Oops...", "Something went wrong, Try again later!", "error");
+		swal("Thanks!", "An email has been sent for your confirmation", "success");
+		var hand = setTimeout(function(){
+			loader.hide();
+			submitBtn.removeAttr('disabled');
+			clearTimeout(hand);
+		}, 1000);
+	});
+});
+
+$('#call-to-action').mouseenter( function(){
+	var $this = $(this);
+	$this.find(".actions").css('display','block');
+	$this.find("ul .btn-floating").velocity({scaleY: ".4",scaleX: ".4",translateY: "40px"}, {duration: 0});
+	var c = 0;
+	$($this.find("ul .btn-floating").get().reverse()).each(function(j) {
+		console.log('j:' +j);
+		console.log($(this));
+         $(this).velocity({opacity: "1",scaleX: "1",scaleY: "1",translateY: "0"}, {duration: 80,delay: c});
+         c += 40;
+     });
+});
+	// var b = a(this);
+ //            b.find("ul .btn-floating").velocity({scaleY: ".4",scaleX: ".4",translateY: "40px"}, {duration: 0});
+ //            var c = 0;
+ //            b.find("ul .btn-floating").reverse().each(function() {
+ //                a(this).velocity({opacity: "1",scaleX: "1",scaleY: "1",translateY: "0"}, {duration: 80,delay: c}), c += 40
+ //            })
+ //        });
+$('#call-to-action').mouseleave( function(){
+	var $this = $(this);
+	$this.find("ul .btn-floating").velocity("stop", !0);
+	$this.find("ul .btn-floating").velocity({opacity: "0",scaleX: ".4",scaleY: ".4",translateY: "40px"}, {duration: 80});
+	// var b = a(this);
+ //            b.find("ul .btn-floating").velocity("stop", !0), b.find("ul .btn-floating").velocity({opacity: "0",scaleX: ".4",scaleY: ".4",translateY: "40px"}, {duration: 80})
+ //        }
+ });
+
+
+
+
+
+
+

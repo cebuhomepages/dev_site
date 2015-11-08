@@ -6,6 +6,13 @@
             <div class="nav-inner">
               <nav class="primary-nav">
                 <div class="clearfix nav-wrapper">
+                  {% if page.is_listing or page.logo %}
+                  <a href="{{ site.baseurl }}{{ page.url }}" class="left brand-logo">
+                      <img src="{{ page.logo | prepend: site.cdn }}" alt="">
+                  </a>
+                  
+                  {% else %}
+
                   <a href="{{ site.baseurl }}" class="left brand-logo">
                     {% if site.logo %}
                       <img src="{{ site.logo | prepend: site.cdn }}" alt="">
@@ -13,6 +20,7 @@
                       <img src="{{ '/images/logo.png' | prepend: site.cdn }}" alt="">
                     {% endif %}
                   </a>
+                  {% endif %}
                   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
                   <ul class="right static-menu">
                     <li class="search-form-li">

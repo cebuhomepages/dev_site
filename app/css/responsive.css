@@ -447,6 +447,10 @@ nav ul li {
   padding: 0;
 }
 
+#call-to-action{
+  display: block;
+}
+
 }
 
 @media only screen and (max-width: 359px) {

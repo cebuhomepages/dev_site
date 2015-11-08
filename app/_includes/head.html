@@ -32,6 +32,9 @@
       <script src="js/html5shiv.js"></script>
   <![endif]-->
 
-  {% include analytics.html %}
+  {% include fb-wca.html %}
 
+  {% if page.is_optin %}
+     {% include optin.css.html %}
+  {% endif %}
 </head>

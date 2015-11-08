@@ -14,11 +14,13 @@
   {% include adwords-conversion-tracking.html %}
   {% include fb-sdk.html %}
   
+  {% comment %}
   {% include pre-loader.html %}
-
+  {% endcomment %}
   <!-- Main Container -->
   <main id="app" class="main-section">
     {% include navigation.html %}
+    {% include floating-call-to-action.html %}
 
     {{ content }}
 

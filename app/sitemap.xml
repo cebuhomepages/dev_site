@@ -9,9 +9,13 @@ title: Sitemap
         <loc>{{ site.baseurl }}{{ post.url }}</loc>
     </url>
 {% endfor %}
+
 {% for page in site.pages %}
-    <url>
+    {% unless page.layout == 're-direct' %} 
+	<url>
         <loc>{{ site.baseurl }}{{ page.url }}</loc>
     </url>
+	{% endunless %}
+    
 {% endfor %}
 </urlset>

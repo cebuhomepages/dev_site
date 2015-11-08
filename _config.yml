@@ -34,16 +34,37 @@ markdown: kramdown
 #     coderay_bold_every: 10
 #     coderay_css: style
 
-pygments: false
+highlighter: pygments
+
+#baseurl: ""
+#cdn: ""
+
 
 #baseurl: "http://localhost:3000"
 #cdn: "http://localhost:3000"
+#img_host: "http://localhost:3000"
 #baseurl: "https://cebuhomepages.github.io"
 #cdn: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
-baseurl: "https://www.cebuhomepages.com"
-img_host: "https://dl.dropboxusercontent.com/u/39191093"
+#baseurl: "https://www.cebuhomepages.com"
+#baseurl: "http://www.cebuhomepages.com.s3-website-ap-southeast-1.amazonaws.com"
+#img_host: "https://dl.dropboxusercontent.com/u/39191093"
+
+#img_host: "https://dmcagfio3mnht.cloudfront.net"
+#cdn: "https://dmcagfio3mnht.cloudfront.net"
 #img_host: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
-cdn: "https://dl.dropboxusercontent.com/u/39191093"
+#cdn: "https://dl.dropboxusercontent.com/u/39191093"
+
+#### Local DEV
+#baseurl: "http://localhost:3000"
+#cdn: "http://localhost:3000"
+#img_host: "http://localhost:3000"
+
+#### Live
+baseurl: "https://www.cebuhomepages.com"
+img_host: "https://dmcagfio3mnht.cloudfront.net"
+cdn: "https://dmcagfio3mnht.cloudfront.net"
+
+
 enforce_ssl: "cebuhomepages.com"
 
 title: Cebu Home Pages
@@ -77,6 +98,12 @@ fb:
   og_image_type: image/jpg
   og_image_width: 300
   og_image_height: 300
+  conversion:
+    readers:
+      id: 6030369792953
+      value: 0.01
+  wca: 
+    pixel_id: 729985667100309
 
 twitter: https://twitter.com/cebuhomepages
 google_plus: https://google.com/+Cebuhomepages

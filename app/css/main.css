@@ -411,6 +411,10 @@ header.nav.hide-menu {
     display: none;
 }
 
+#call-to-action{
+    display: none;
+}
+
 .side-nav li {
     margin-left: 40px;
 }
@@ -1925,6 +1929,22 @@ span.num {
 .blog-text i{
   color: #4CAF50;
 }
+
+.single-post-content strong{
+    font-size: initial;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.single-post-content li{
+    padding-bottom: 20px;
+}
+
+.single-post-content em{
+  font-style: italic;
+  color: #4CAF50;
+}
+
 
 
 
