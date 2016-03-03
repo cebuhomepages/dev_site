@@ -44,7 +44,7 @@ And so much more.. you get to enjoy your unit and the amenities just like your g
 
 ## I can help you finding that
 
-You can connect with me now through facebook or email. It's now [easier than ever](communication). 
+You can connect with me now through facebook or email. It's now [easier than ever][communication]. 
 
 {% include connect-buttons.html %}
 
