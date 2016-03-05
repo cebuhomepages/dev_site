@@ -10,23 +10,23 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link rel="stylesheet" href="css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.cdn }}/canvas/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.cdn }}/canvas/style.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.cdn }}/canvas/css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.cdn }}/canvas/css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.cdn }}/canvas/css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.cdn }}/canvas/css/magnific-popup.css" type="text/css" />
 
-	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.cdn }}/canvas/css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lt IE 9]>
-		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<script src="{{ site.cdn }}/canvas/http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
 
 	<!-- External JavaScripts
 	============================================= -->
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/jquery.js"></script>
+	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/plugins.js"></script>
 
 	<!-- Document Title
 	============================================= -->
@@ -53,8 +53,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="standard-logo" data-dark-logo="{{ site.cdn }}/canvas/images/logo-dark.png"><img src="{{ site.cdn }}/canvas/images/logo.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="{{ site.cdn }}/canvas/images/logo-dark@2x.png"><img src="{{ site.cdn }}/canvas/images/logo@2x.png" alt="Canvas Logo"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation
@@ -77,7 +77,7 @@
 
 		</header><!-- #header end -->
 
-		<section id="slider" class="slider-parallax dark full-screen" style="background: linear-gradient(rgba(76,175,80, 0.470588), rgba(46,125,50, 0.470588)), url(images/landing/landing1.jpg) center;">
+		<section id="slider" class="slider-parallax dark full-screen" style="background: linear-gradient(rgba(76,175,80, 0.470588), rgba(46,125,50, 0.470588)), url( {{site.cdn}}/canvas/images/landing/landing1.jpg) center;">
 
 			<div class="container clearfix">
 
@@ -129,7 +129,7 @@
 					<div class="col_one_third">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn">
-								<a href="#"><img src="images/icons/features/responsive.png" alt="Expertise in Bay front development"></a>
+								<a href="#"><img src="{{ site.cdn }}/canvas/images/icons/features/bay-front.png" alt="Expertise in Bay front development"></a>
 							</div>
 							<h3>Expertise in Bay front development</h3>
 							<p>Hongkong land developed Marina Bay Financial Center in Singapore. They have an impressive track record in developing world class Bay fronts.</p>
@@ -139,7 +139,7 @@
 					<div class="col_one_third">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn" data-delay="200">
-								<a href="#"><img src="images/icons/features/retina.png" alt="Spacious and Elegant Units"></a>
+								<a href="#"><img src="{{ site.cdn }}/canvas/images/icons/features/retina.png" alt="Spacious and Elegant Units"></a>
 							</div>
 							<h3>Spacious and Elegant Units</h3>
 							<p>Offers huge square spaces. Studio Units starts at 30sqm, bigger than what is offered in the market.</p>
@@ -149,7 +149,7 @@
 					<div class="col_one_third col_last">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn" data-delay="400">
-								<a href="#"><img src="images/icons/features/performance.png" alt="Impressive Partners"></a>
+								<a href="#"><img src="{{ site.cdn }}/canvas/images/icons/features/consultant.png" alt="Impressive Partners"></a>
 							</div>
 							<h3>Impressive Partners</h3>
 							<p>Consultants working on the project are world class to give an outcome on par with the rest of the world.</p>
@@ -161,7 +161,7 @@
 					<div class="col_one_third">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn" data-delay="600">
-								<a href="#"><img src="images/icons/features/flag.png" alt="World Class Inspirations"></a>
+								<a href="#"><img src="{{ site.cdn }}/canvas/images/icons/features/world-class.png" alt="World Class Inspirations"></a>
 							</div>
 							<h3>World Class Inspirations</h3>
 							<p>Project Concepts are inspired by places around the world. From Marina Bay of Singapore to the Central Park of New York City.</p>
@@ -171,7 +171,7 @@
 					<div class="col_one_third">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn" data-delay="800">
-								<a href="#"><img src="images/icons/features/tick.png" alt="Developed by a leading property investment, management and development group."></a>
+								<a href="#"><img src="{{ site.cdn }}/canvas/images/icons/features/developed.png" alt="Developed by a leading property investment, management and development group."></a>
 							</div>
 							<h3>Developed by a leading property investment, management and development group.</h3>
 							<p>Founded in 1889, Hongkong Land’s business is built on excellence, integrity and partnership.  </p>
@@ -181,7 +181,7 @@
 					<div class="col_one_third col_last">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn" data-delay="1000">
-								<a href="#"><img src="images/icons/features/tools.png" alt="Long Term Investment"></a>
+								<a href="#"><img src="{{ site.cdn }}/canvas/images/icons/features/investment.png" alt="Long Term Investment"></a>
 							</div>
 							<h3>Long Term Investment</h3>
 							<p>The entire project will be developed for 15 years, which means unit rates here will continue to appreciate for as long as there is progress in development.</p>
@@ -193,7 +193,7 @@
 					<div class="col_one_third">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn" data-delay="1200">
-								<a href="#"><img src="images/icons/features/map.png" alt="Location Location Location"></a>
+								<a href="#"><img src="{{ site.cdn }}/canvas/images/icons/features/map.png" alt="Location Location Location"></a>
 							</div>
 							<h3>Location Location Location</h3>
 							<p>In the progressive bay of Zuellig Ave. in Mandaue City, Mandani Bay is a hop, a skip, a drive away from almost anywhere.</p>
@@ -203,7 +203,7 @@
 					<div class="col_one_third">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn" data-delay="1400">
-								<a href="#"><img src="images/icons/features/seo.png" alt="Elevated Lifestyle"></a>
+								<a href="#"><img src="{{ site.cdn }}/canvas/images/icons/features/seo.png" alt="Elevated Lifestyle"></a>
 							</div>
 							<h3>Cebu on a Bay View</h3>
 							<p>Experience a new perspective of Cebu. Watch the sunset in your warm and cozy home.</p>
@@ -213,7 +213,7 @@
 					<div class="col_one_third col_last">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn" data-delay="1600">
-								<a href="#"><img src="images/icons/features/support.png" alt="Powerful Performance"></a>
+								<a href="#"><img src="{{ site.cdn }}/canvas/images/icons/features/performance.png" alt="Powerful Performance"></a>
 							</div>
 							<h3>Elevated Lifestyle</h3>
 							<p>Live a life you love. Feel the warmth of home while enjoying a modern living.</p>
@@ -225,26 +225,26 @@
 					<div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
 
 					<div id="section-pricing" class="heading-block title-center nobottomborder page-section">
-						<h2>Pricing Details</h2>
-						<span>Our All inclusive Pricing Plan that covers you well</span>
+						<h2>Easy Payment Plan </h2>
+						<span>Our Easy Payment plan covers you well</span>
 					</div>
 
 					<div class="pricing-box pricing-extended bottommargin clearfix">
 
 						<div class="pricing-desc">
 							<div class="pricing-title">
-								<h3>How many Themes can you Download today?</h3>
+								<h3>What do you get for a Studio Unit? </h3>
 							</div>
 							<div class="pricing-features">
 								<ul class="iconlist-color clearfix">
-									<li><i class="icon-desktop"></i> Ultra Responsive Layouts</li>
-									<li><i class="icon-eye-open"></i> Retina Ready Designs</li>
-									<li><i class="icon-beaker"></i> Advanced Admin Panel</li>
-									<li><i class="icon-magic"></i> Tons of Customization Options</li>
-									<li><i class="icon-font"></i> Support for Custom Fonts</li>
-									<li><i class="icon-stack3"></i> Premium Sliders Included</li>
-									<li><i class="icon-file2"></i> Photoshop Source Files Included</li>
-									<li><i class="icon-support"></i> 24x7 Priority Email Support</li>
+									<li><i class="icon-desktop"></i> Spacious 29.75 sqm Unit</li>
+									<li><i class="icon-eye-open"></i> Choice of Bay or Mountain View</li>
+									<li><i class="icon-beaker"></i> Progressive Community </li>
+									<li><i class="icon-magic"></i> Built with World Class standards</li>
+									<li><i class="icon-font"></i> 24x7 Security </li>
+									<li><i class="icon-stack3"></i> Close Proximity </li>
+									<li><i class="icon-file2"></i> Impressive Property Management </li>
+									<li><i class="icon-support"></i> Enjoy the Pool </li>
 								</ul>
 							</div>
 						</div>
@@ -280,7 +280,7 @@
 							<li>
 								<div class="testimonial">
 									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/1.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="{{ site.cdn }}/canvas/images/testimonials/1.jpg" alt="Customer Testimonails"></a>
 									</div>
 									<div class="testi-content">
 										<p>a premium mixed-use development in Mandaue City, Cebu. It occupies a waterfront site of approximately 20 hectares with a prominent location between Mactan Island, the home of Cebu International Airport, and Cebu business park</p>
@@ -294,7 +294,7 @@
 							<li>
 								<div class="testimonial">
 									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="{{ site.cdn }}/canvas/images/testimonials/2.jpg" alt="Customer Testimonails"></a>
 									</div>
 									<div class="testi-content">
 										<p>25 towers with a total of 18,000 condominium units intended for the middle to high-end market. On top of the residential component, the project, which is located in a waterfront site, will also have retail, office, recreational and marina components.</p>
@@ -308,7 +308,7 @@
 							<li>
 								<div class="testimonial">
 									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/7.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="{{ site.cdn }}/canvas/images/testimonials/7.jpg" alt="Customer Testimonails"></a>
 									</div>
 									<div class="testi-content">
 										<p>An initial investment of PHP4.5 billion will kick off the multi-billion peso 20-hectare Mandani Bay township project, the first waterfront township project along Zuellig Ave. in Mandaue City.</p>
@@ -322,7 +322,7 @@
 							<li>
 								<div class="testimonial">
 									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="{{ site.cdn }}/canvas/images/testimonials/3.jpg" alt="Customer Testimonails"></a>
 									</div>
 									<div class="testi-content">
 										<p>Mandani’ is the ancient name for Mandaue, which is fitting for our project because it links Mandaue’s heritage with its bright future.  We intend to transform this part of Mandaue into a modern, yet culturally sensitive lifestyle destination. ‘Bay’ is also appropriate as it highlights the waterfront nature of this project.</p>
@@ -336,7 +336,7 @@
 							<li>
 								<div class="testimonial">
 									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/4.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="{{ site.cdn }}/canvas/images/testimonials/4.jpg" alt="Customer Testimonails"></a>
 									</div>
 									<div class="testi-content">
 										<p>Mandani Bay has already paved its three-hectare property where more than 3,000 delegates of the 51st International Eucharistic Congress Youth Day</p>
@@ -350,7 +350,7 @@
 							<li>
 								<div class="testimonial">
 									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/8.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="{{ site.cdn }}/canvas/images/testimonials/8.jpg" alt="Customer Testimonails"></a>
 									</div>
 									<div class="testi-content">
 										<p>We will integrate culture, commerce and community in one area. There is plenty of potential in Cebu because this is a place where people from Luzon and Mindanao converge.</p>
@@ -396,7 +396,7 @@
 
 							<div id="snav-content1">
 								<h3>Ultra Responsive Template</h3>
-								<img class="alignright img-responsive" src="images/landing/responsive.png" alt="">
+								<img class="alignright img-responsive" src="{{ site.cdn }}/canvas/images/landing/responsive.png" alt="">
 
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, ex, inventore, tenetur, repellat ipsam soluta libero amet nam aspernatur perspiciatis quos praesentium et debitis ea odit enim illo aliquid eligendi numquam neque. Ipsum, voluptatibus, perspiciatis a quam aliquid cumque cupiditate id ipsa tempora eveniet. Cupiditate, necessitatibus, consequatur odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, vitae, laboriosam libero nihil labore hic modi? Odit, veritatis nulla molestiae!
 							</div>
@@ -412,7 +412,7 @@
 							</div>
 
 							<div id="snav-content4">
-								<img class="alignleft img-responsive" src="images/landing/bootstrap.png" alt="">
+								<img class="alignleft img-responsive" src="{{ site.cdn }}/canvas/images/landing/bootstrap.png" alt="">
 								<h3>Bootstrap v3.2.0 Compatiable</h3>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nostrum, dolores id quo nam repudiandae ad culpa architecto minima nemo eaque soluta nulla laborum neque provident saepe facilis expedita numquam quas alias in perferendis accusamus ipsam blanditiis sit voluptatem temporibus vero error veritatis repellat eos reiciendis repellendus quam. Officia dicta ipsam nostrum aperiam. Dolor, expedita enim modi nostrum commodi sint architecto aliquam aut mollitia repellendus deserunt quaerat aspernatur aperiam voluptatibus consequatur rerum consequuntur.
 							</div>
@@ -499,7 +499,7 @@
 
 								<p>We believe in <strong>Simplified</strong> Real Estate Transactions, <strong>Sound</strong> &amp; <strong>Well Informed</strong> Decisions.</p>
 
-								<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+								<div style="background: url('{{ site.cdn}}/canvas/images/world-map.png') no-repeat center center; background-size: 100%;">
 									<address>
 										<strong>Our Home:</strong><br>
 										Hernan Cortes Street, Brgy. Casuntingan<br>
@@ -730,7 +730,7 @@
 
 	<!-- Footer Scripts
 	============================================= -->
-	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/functions.js"></script>
 
 </body>
 </html>
