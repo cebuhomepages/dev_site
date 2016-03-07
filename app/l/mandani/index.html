@@ -15,13 +15,18 @@ images:
   post:
     banner: mandanibay-phase1-750x400.jpg      #750x400
 
+title: Mandani Bay thru Cebu Home Pages
+
 description: Mandani Bay is a premium mixed-use development in Mandaue City, Cebu. It occupies a waterfront site of approximately 20 hectares with a prominent location between Mactan Island, the home of Cebu International Airport, and Cebu business park, a major commercial area in Cebu.  The project will be developed in phases over more than 10 years.
 ---
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
+	{% include secure-site.html %}
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	{% include fb-meta.html %}
 	
 	<!-- Stylesheets
 	============================================= -->
@@ -44,13 +49,22 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/jquery.js"></script>
 	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/plugins.js"></script>
 
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/jquery.gmap.js"></script>
+
 	<!-- Document Title
 	============================================= -->
 	<title>Mandani Bay | Live Your Passion</title>
 
+	{% include fb-wca.html %}
+	{% include analytics.html %}
+
 </head>
 
 <body class="stretched">
+
+	{% include adwords-conversion-tracking.html %}
+  	{% include fb-sdk.html %}
 
 	<!-- Document Wrapper
 	============================================= -->
@@ -93,7 +107,7 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 
 		</header><!-- #header end -->
 
-		<section id="slider" class="slider-parallax dark full-screen" style="background: linear-gradient(rgba(76,175,80, 0.470588), rgba(46,125,50, 0.470588)), url( {{site.cdn}}/canvas/images/facade.png) center;">
+		<section id="slider" class="slider-parallax dark full-screen" style="background: linear-gradient(rgba(76,175,80, 0.470588), rgba(46,125,50, 0.470588)), url( {{site.cdn}}/canvas/images/landing/mandani-landing.jpg) center;">
 
 			<div class="container clearfix">
 
@@ -104,21 +118,27 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 						<span data-animate="fadeInUp" data-delay="300">A vision on par with the worlds vibrant cultural districts.</span>
 					</div>
 
-					<form action="#" method="post" role="form" class="landing-wide-form clearfix">
+					<form action="//cebuhomepages.us8.list-manage.com/subscribe/post?u=851943f628abfb51292daa61b&amp;id=0e268a84e0" method="post" role="form" class="landing-wide-form clearfix">
 						<div class="col_four_fifth nobottommargin">
 							<div class="col_one_third nobottommargin">
-								<input type="text" class="form-control input-lg not-dark" value="" placeholder="Your Name*">
+								<input type="text" class="form-control input-lg not-dark" value="" placeholder="Your Name*" name="FNAME">
 							</div>
 							<div class="col_one_third nobottommargin">
-								<input type="email" class="form-control input-lg not-dark" value="" placeholder="Your Email*">
+								<input type="email" class="form-control input-lg not-dark" value="" placeholder="Your Email*" name="EMAIL">
 							</div>
 							<div class="col_one_third col_last nobottommargin">
-								<input type="text" class="form-control input-lg not-dark" value="" placeholder="09171234567*">
+								<input type="text" class="form-control input-lg not-dark" value="" placeholder="09171234567*" name="MMERGE3">
 							</div>
 						</div>
 						<div class="col_one_fifth col_last nobottommargin">
 							<button class="btn btn-lg btn-danger btn-block nomargin" value="submit" type="submit" style="">TELL ME MORE</button>
 						</div>
+
+						<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_851943f628abfb51292daa61b_0e268a84e0" tabindex="-1" value=""></div>
 					</form>
 
 				</div>
@@ -273,7 +293,7 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 								<span class="price-unit">&#8369;</span>5,979<span class="price-tenure">monthly</span>
 							</div>
 							<div class="pricing-action">
-								<a href="#" class="button button-3d button-large btn-block nomargin">ASK COMPUTATION</a>
+								<a href="tel:+639176312463" class="button button-3d button-large btn-block nomargin"><i class="icon-phone3 large"></i>COMPUTATION</a>
 							</div>
 						</div>
 
@@ -412,7 +432,37 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 
 							<div id="snav-content1">
 								<h3>Location is Everything</h3>
-								Nested in the very accessible FE Zuellig Avenue, Mandaue City, Cebu, It occupies a waterfront site of approximately 20 hectares with a prominent location between Mactan Island, the home of Cebu International Airport, and Cebu business park, a major commercial area in Cebu.  The project will be developed in phases over more than 10 years.
+								<p>Nested in the very accessible FE Zuellig Avenue, Mandaue City, Cebu, It occupies a waterfront site of approximately 20 hectares with a prominent location between Mactan Island, the home of Cebu International Airport, and Cebu business park, a major commercial area in Cebu.  The project will be developed in phases over more than 10 years.</p>
+
+								<div id="google-map4" style="height: 250px; margin-bottom: 20px;" class="gmap"></div>
+
+								<script type="text/javascript">
+
+									$('#google-map4').gMap({
+
+										 address: 'F.E. Zuellig Ave, Mandaue City, Cebu, Philippines',
+										 maptype: 'ROADMAP',
+										 zoom: 15,
+										 markers: [
+											{
+												latitude: 10.320653,
+												longitude: 123.936760,
+												html: "20-hectare Mandani Bay"
+											}
+										 ],
+										 doubleclickzoom: false,
+										 controls: {
+											 panControl: true,
+											 zoomControl: true,
+											 mapTypeControl: false,
+											 scaleControl: false,
+											 streetViewControl: false,
+											 overviewMapControl: false
+										 }
+
+									});
+
+								</script>
 							</div>
 
 							<div id="snav-content2">
@@ -567,7 +617,7 @@ Phase One will comprise two blocks of approximately 1,200 condominium units.  In
 
 						<div class="center">
 
-							<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cebuhomepages.com/l/baselinecenter/" target="_blank" data-animate="tada" class="button button-3d button-teal button-xlarge nobottommargin"><i class="icon-share"></i>Share on FB</a> - OR - <a href="tel:+639177243370" data-scrollto="#section-pricing" class="button button-3d button-red button-xlarge nobottommargin"><i class="icon-phone"></i>Call Luchelle</a>
+							<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cebuhomepages.com/l/mandani/" target="_blank" data-animate="tada" class="button button-3d button-teal button-xlarge nobottommargin"><i class="icon-share"></i>Share on FB</a> - OR - <a href="tel:++639176312463" data-scrollto="#section-pricing" class="button button-3d button-red button-xlarge nobottommargin"><i class="icon-phone"></i>Call Luchelle</a>
 
 						</div>
 
@@ -662,14 +712,11 @@ Phase One will comprise two blocks of approximately 1,200 condominium units.  In
 
 							<div class="row">
 
-								<div class="col-md-6 bottommargin-sm">
-									<div class="counter counter-small"><span data-from="50" data-to="15065421" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
-									<h5 class="nobottommargin">Total Downloads</h5>
-								</div>
+								
 
 								<div class="col-md-6 bottommargin-sm">
 									<div class="counter counter-small"><span data-from="100" data-to="18465" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
-									<h5 class="nobottommargin">Clients</h5>
+									<h5 class="nobottommargin">Visitors</h5>
 								</div>
 
 							</div>
@@ -742,7 +789,7 @@ Phase One will comprise two blocks of approximately 1,200 condominium units.  In
 				<div class="container clearfix">
 
 					<div class="col_half">
-						Copyrights &copy; 2016 All Rights Reserved by Canvas Inc.<br>
+						Copyrights &copy; 2016 All Rights Reserved by Cebu Home Pages.<br>
 						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
 					</div>
 
