@@ -459,4 +459,8 @@ module.exports = function (grunt) {
     'imagemin:resp'
   ]);
 
+  grunt.registerTask('forcegit', [
+    'git_deploy:remote'
+  ]);
+
 };
