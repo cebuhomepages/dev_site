@@ -159,7 +159,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= yeoman.dist %>'
       },
-      html: '<%= yeoman.dist %>/index.html'
+      html: '<%= yeoman.dist %>/l/mandani/index.html'
     },
     usemin: {
       options: {
@@ -189,6 +189,7 @@ module.exports = function (grunt) {
     // Usemin adds files to uglify
     uglify: {},
     // Usemin adds files to cssmin
+
     cssmin: {
       dist: {
         options: {
@@ -380,6 +381,9 @@ module.exports = function (grunt) {
     if (target === 'dist') {
       return grunt.task.run(['build', 'browserSync:dist']);
     }
+    else if (target === 'cute') {
+      return grunt.task.run(['cutify', 'browserSync:dist']);
+    }
 
     grunt.task.run([
       'clean:server',
@@ -462,5 +466,19 @@ module.exports = function (grunt) {
   grunt.registerTask('forcegit', [
     'git_deploy:remote'
   ]);
+
+  grunt.registerTask('cutify', [
+    'clean',
+    // Jekyll cleans files from the target directory, so must run first
+    'jekyll:dist',
+    'concurrent:dist',
+    'useminPrepare',
+    'concat',
+    'cssmin',
+    'uglify',
+    'filerev',
+    'usemin',
+    'htmlmin'
+    ]);
 
 };

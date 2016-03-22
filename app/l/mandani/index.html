@@ -52,7 +52,7 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/jquery.js"></script>
 	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/plugins.js"></script>
 
-	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
 	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/jquery.gmap.js"></script>
 
 	<!-- Document Title
@@ -64,7 +64,7 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 
 </head>
 
-<body class="stretched">
+<body class="stretched" data-loader-timeout="2000">
 
 	{% include adwords-conversion-tracking.html %}
   	{% include fb-sdk.html %}
@@ -121,7 +121,7 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 						<span data-animate="fadeInUp" data-delay="300">A vision on par with the worlds vibrant cultural districts.</span>
 					</div>
 
-					<form action="//cebuhomepages.us8.list-manage.com/subscribe/post?u=851943f628abfb51292daa61b&amp;id=0e268a84e0" method="post" role="form" class="landing-wide-form clearfix">
+					<form action="//cebuhomepages.us8.list-manage.com/subscribe/post?u=851943f628abfb51292daa61b&amp;id=0e268a84e0" method="post" role="form" id="widget-subscribe-listing-form" class="landing-wide-form clearfix">
 						<div class="col_four_fifth nobottommargin">
 							<div class="col_one_third nobottommargin">
 								<input type="text" class="form-control input-lg not-dark" value="" placeholder="Your Name*" name="FNAME">
@@ -134,7 +134,7 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 							</div>
 						</div>
 						<div class="col_one_fifth col_last nobottommargin">
-							<button class="btn btn-lg btn-primary btn-block nomargin" value="submit" type="submit" style="">SUBSCRIBE ME</button>
+							<button class="btn btn-lg btn-primary btn-block nomargin" value="submit" type="submit" style=""><i class="icon-email2"></i></span><span class="subscribe-text">SUBSCRIBE ME</span></button>
 						</div>
 
 						<div id="mce-responses" class="clear">
@@ -143,6 +143,63 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_851943f628abfb51292daa61b_0e268a84e0" tabindex="-1" value=""></div>
 					</form>
+					<script type="text/javascript">
+								$("#widget-subscribe-listing-form").validate({
+									submitHandler: function(form) {
+										$(form).find('button').find('.subscribe-text').html('SUBSCRIBING..')
+										$(form).find('button').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
+										$(form).ajaxSubmit({
+											success: function() {
+												$(form).find('button').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+
+												if( $('body').hasClass('device-lg') || $('body').hasClass('device-md') ){
+													var emailClient = "www.gmail.com";
+													var emailAddress = $(form).find('input[type=email]').val();
+													var idx = emailAddress.lastIndexOf('@');
+													if (idx > -1 && emailAddress.slice(idx+1) === 'yahoo.com') {
+														emailClient = "www.yahoomail.com";
+													  
+													}else if (idx > -1 && emailAddress.slice(idx+1) === 'hotmail.com'){
+														emailClient = "www.hotmail.com";
+													}
+
+													$('#mailchimpModal .open-mail-client').attr('href','//'+emailClient);
+												}else{
+													$('#mailchimpModal .open-mail-client').attr('href','mailto:');
+												}
+
+												$('#mailchimpModal').modal('show');
+
+												$(form).find('button').find('.subscribe-text').html('SUBSCRIBE ME');
+												
+											},
+											error: function(){
+												$(form).find('button').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+
+												if( $('body').hasClass('device-lg') || $('body').hasClass('device-md') ){
+													var emailClient = "www.gmail.com";
+													var emailAddress = $(form).find('input[type=email]').val();
+													var idx = emailAddress.lastIndexOf('@');
+													if (idx > -1 && emailAddress.slice(idx+1) === 'yahoo.com') {
+														emailClient = "www.yahoomail.com";
+													  
+													}else if (idx > -1 && emailAddress.slice(idx+1) === 'hotmail.com'){
+														emailClient = "www.hotmail.com";
+													}
+
+													$('#mailchimpModal .open-mail-client').attr('href','//'+emailClient);
+												}else{
+													$('#mailchimpModal .open-mail-client').attr('href','mailto:');
+												}
+
+												$('#mailchimpModal').modal('show');
+
+												$(form).find('button').find('.subscribe-text').html('SUBSCRIBE ME');
+											}
+										});
+									}
+								});
+							</script>
 
 				</div>
 
@@ -880,6 +937,31 @@ Phase One will comprise two blocks of approximately <strong>1,200</strong> condo
 	<!-- Go To Top
 	============================================= -->
 	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<div id="widget-subscribe-listing-form-result" data-toggle="modal" data-target="#mailchimpModal"></div>
+					<div class="modal" id="mailchimpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+							<div class="modal-dialog">
+								<div class="modal-body">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											<h4 class="modal-title" id="myModalLabel">Almost There</h4>
+										</div>
+										<div class="modal-body">
+											<h4>1 More Step</h4>
+											<p>We sent you a confirmation through your email. Kindly click on the link to confirm your subscription.</p>
+
+											
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											<a target="_blank" class="btn btn-primary open-mail-client">Open Mail</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
 
 	<!-- Footer Scripts
 	============================================= -->

@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
@@ -8,14 +10,14 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link rel="stylesheet" href="css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.cdn }}/canvas/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.cdn }}/canvas/style.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.cdn }}/canvas/css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.cdn }}/canvas/css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.cdn }}/canvas/css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.cdn }}/canvas/css/magnific-popup.css" type="text/css" />
 
-	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.cdn }}/canvas/css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -700,6 +702,7 @@
 					<li class="active">Search</li>
 				</ol>
 			</div>
+			<gcse:search></gcse:search>
 
 		</section><!-- #page-title end -->
 
@@ -955,25 +958,26 @@
 
 	<!-- External JavaScripts
 	============================================= -->
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/jquery.js"></script>
+	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/plugins.js"></script>
 
 	<!-- Footer Scripts
 	============================================= -->
-	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/functions.js"></script>
 
-	<script type="text/javascript">
-		(function() {
-			var cx = '013847901306585935045:vgbu-alkgog';
-			var gcse = document.createElement('script');
-			gcse.type = 'text/javascript';
-			gcse.async = true;
-			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-				'//www.google.com/cse/cse.js?cx=' + cx;
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(gcse, s);
-		})();
-	</script>
+	<script>
+  (function() {
+    var cx = '013847901306585935045:vgbu-alkgog';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
 
 </body>
 </html>
