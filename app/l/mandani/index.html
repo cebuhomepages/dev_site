@@ -121,7 +121,7 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 						<span data-animate="fadeInUp" data-delay="300">A vision on par with the worlds vibrant cultural districts.</span>
 					</div>
 
-					<form action="//cebuhomepages.us8.list-manage.com/subscribe/post?u=851943f628abfb51292daa61b&amp;id=0e268a84e0" method="post" role="form" id="widget-subscribe-listing-form" class="landing-wide-form clearfix">
+					<form action="//cebuhomepages.us8.list-manage.com/subscribe/post?u=851943f628abfb51292daa61b&amp;id=0e268a84e0&c=?" method="post" role="form" id="widget-subscribe-listing-form" class="landing-wide-form clearfix">
 						<div class="col_four_fifth nobottommargin">
 							<div class="col_one_third nobottommargin">
 								<input type="text" class="form-control input-lg not-dark" value="" placeholder="Your Name*" name="FNAME">
@@ -134,7 +134,7 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 							</div>
 						</div>
 						<div class="col_one_fifth col_last nobottommargin">
-							<button class="btn btn-lg btn-primary btn-block nomargin" value="submit" type="submit" style=""><i class="icon-email2"></i></span><span class="subscribe-text">SUBSCRIBE ME</span></button>
+							<button class="btn btn-lg btn-primary btn-block nomargin" value="submit" type="submit" style=""><i class="stat-icon"></i></span>&nbsp;<span class="subscribe-text">SUBSCRIBE ME</span></button>
 						</div>
 
 						<div id="mce-responses" class="clear">
@@ -147,10 +147,12 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 								$("#widget-subscribe-listing-form").validate({
 									submitHandler: function(form) {
 										$(form).find('button').find('.subscribe-text').html('SUBSCRIBING..')
-										$(form).find('button').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
+										$(form).find('button').find('.stat-icon').removeClass('stat-icon').addClass('icon-line-loader icon-spin');
 										$(form).ajaxSubmit({
+											data: $(form).serialize(),
+											dataType: 'jsonp',
 											success: function() {
-												$(form).find('button').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+												$(form).find('button').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('stat-icon');
 
 												if( $('body').hasClass('device-lg') || $('body').hasClass('device-md') ){
 													var emailClient = "www.gmail.com";
@@ -350,7 +352,7 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 								As Low as
 							</div>
 							<div class="pricing-price">
-								<span class="price-unit">&#8369;</span>5,979<span class="price-tenure">monthly for 48mos.</span>
+								<span class="price-unit">&#8369;</span>6,888<span class="price-tenure">monthly for 47mos. + 10% DP</span>
 							</div>
 							<div class="pricing-action">
 								<a href="tel:+639176312463" class="button button-3d button-large btn-block nomargin"><i class="icon-phone3 large"></i>COMPUTATION</a>
@@ -835,28 +837,39 @@ Phase One will comprise two blocks of approximately <strong>1,200</strong> condo
 						<div class="widget subscribe-widget clearfix">
 							<h5><strong>Subscribe</strong> to Our Newsletter to get Real Estate Advise, Latest News and more info.</h5>
 							<div id="widget-subscribe-form-result" data-notify-type="success" data-notify-msg=""></div>
-							<form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
+							<form id="widget-subscribe-form" action="//cebuhomepages.us8.list-manage.com/subscribe/post?u=851943f628abfb51292daa61b&amp;id=bbc48c996e&c=?" role="form" method="post" class="nobottommargin">
 								<div class="input-group divcenter">
 									<span class="input-group-addon"><i class="icon-email2"></i></span>
-									<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+									<input type="email" id="widget-subscribe-form-email" name="EMAIL" class="form-control required email" placeholder="Enter your Email">
 									<span class="input-group-btn">
 										<button class="btn btn-success" type="submit">Subscribe</button>
 									</span>
 								</div>
+								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_851943f628abfb51292daa61b_bbc48c996e" tabindex="-1" value=""></div>
 							</form>
 							<script type="text/javascript">
 								$("#widget-subscribe-form").validate({
 									submitHandler: function(form) {
 										$(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
-										// $(form).ajaxSubmit({
-										// 	target: '#widget-subscribe-form-result',
-										// 	success: function() {
-										// 		$(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
-										// 		$('#widget-subscribe-form').find('.form-control').val('');
-										// 		$('#widget-subscribe-form-result').attr('data-notify-msg', $('#widget-subscribe-form-result').html()).html('');
-										// 		SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
-										// 	}
-										// });
+										$(form).ajaxSubmit({
+											data: $(form).serialize(),
+											dataType: 'jsonp',
+											target: '#widget-subscribe-form-result',
+											success: function() {
+												$(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+												$('#widget-subscribe-form').find('.form-control').val('');
+												$('#widget-subscribe-form-result').attr('data-notify-type','success');
+												$('#widget-subscribe-form-result').attr('data-notify-msg', '<i class=icon-ok-sign></i>Thank you for Subscribing. Sent you a confirmation mail.').html('');
+												SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
+											},
+											error: function() {
+												$(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+												$('#widget-subscribe-form').find('.form-control').val('');
+												$('#widget-subscribe-form-result').attr('data-notify-type','success');
+												$('#widget-subscribe-form-result').attr('data-notify-msg', '<i class=icon-ok-sign></i>Thank you for Subscribing. Sent you a confirmation mail.').html('');
+												SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
+											}
+										});
 									}
 								});
 							</script>
@@ -948,8 +961,10 @@ Phase One will comprise two blocks of approximately <strong>1,200</strong> condo
 											<h4 class="modal-title" id="myModalLabel">Almost There</h4>
 										</div>
 										<div class="modal-body">
-											<h4>1 More Step</h4>
-											<p>We sent you a confirmation through your email. Kindly click on the link to confirm your subscription.</p>
+											<h3>One More Step</h3>
+											<p>We sent you a confirmation through your email. Kindly click on the confirmation button to proceed with your subscription.</p>
+
+											<p>Thank you and looking forward to meeting you.</p>
 
 											
 										<div class="modal-footer">

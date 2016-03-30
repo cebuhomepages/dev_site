@@ -60,9 +60,9 @@ cdn: "http://localhost:3000"
 img_host: "http://localhost:3000"
 
 #### Live
-#baseurl: "https://www.cebuhomepages.com"
-#img_host: "https://dmcagfio3mnht.cloudfront.net"
-#cdn: "https://dmcagfio3mnht.cloudfront.net"
+baseurl: "https://www.cebuhomepages.com"
+img_host: "https://dmcagfio3mnht.cloudfront.net"
+cdn: "https://dmcagfio3mnht.cloudfront.net"
 
 
 enforce_ssl: "cebuhomepages.com"
@@ -112,3 +112,9 @@ google_analytics: UA-48709253-1
 google:
   page_id: 116568573527527678461
   google-site-verification: vYBf-jDAw2Ewu5a3SqpYhUjPxer2j46QUK7ohpBFFXU
+
+
+root:
+  css: /canvas/css
+  js: /canvas/js
+  r: /canvas
