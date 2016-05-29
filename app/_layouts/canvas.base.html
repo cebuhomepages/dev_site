@@ -15,6 +15,16 @@
 	<link rel="stylesheet" href="{{ site.root.css | prepend: site.cdn }}/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="{{ site.root.r | prepend: site.cdn }}/style.css" type="text/css" />
 	<link rel="stylesheet" href="{{ site.root.css | prepend: site.cdn }}/font-icons.css" type="text/css" />
+
+	{% if page.is_dark %}
+	<link rel="stylesheet" href="{{ site.root.css | prepend: site.cdn }}/dark.css" type="text/css" />
+	{% endif %}
+
+	{% if page.custom_css %}
+  	  {% for css_file in page.custom_css %}
+  		<link rel="stylesheet" href="{{ site.root.css | prepend: site.cdn }}/{{ css_file }}.css" type="text/css" />
+  	  {% endfor %}
+	{% endif %}
 	<link rel="stylesheet" href="{{ site.root.css | prepend: site.cdn }}/animate.css" type="text/css" />
 	<link rel="stylesheet" href="{{ site.root.css | prepend: site.cdn }}/magnific-popup.css" type="text/css" />
 
@@ -33,7 +43,7 @@
 
 </head>
 
-<body class="stretched" >
+<body class="stretched" data-loader-timeout="2000">
 
 	{% include adwords-conversion-tracking.html %}
   	{% include fb-sdk.html %}
@@ -64,11 +74,10 @@
 					<nav id="primary-menu">
 
 						<ul class="one-page-menu">
-							<li class="current"><a href="#" data-href="#header"><div>Home</div></a></li>
-							<li><a href="#" data-href="#section-features"><div>Features</div></a></li>
-							<li><a href="#" data-href="#section-pricing"><div>Pricing</div></a></li>
-							<li><a href="#" data-href="#section-testimonials"><div>As seen in</div></a></li>
-							<li><a href="#" data-href="#section-specs"><div>Specifications</div></a></li>
+							<li><a href="{{ site.baseurl }}/l/mandani"><div>Home</div></a></li>
+							<li class="current"><a href="#"><div>Master Plan</div></a></li>
+							<li><a href="{{ site.baseurl }}/l/mandani/phase1"><div>Phase 1</div></a></li>
+							<li><a href="{{ site.baseurl }}/l/mandani/pricing"><div>Pricing</div></a></li>
 						</ul>
 
 					</nav><!-- #primary-menu end -->
@@ -81,7 +90,6 @@
 
 		{{ content }}
 
-		{% comment %}
 		<!-- Footer
 		============================================= -->
 		<footer id="footer" class="dark">
@@ -292,7 +300,7 @@
 			</div><!-- #copyrights end -->
 
 		</footer><!-- #footer end -->
-		{% endcomment %}
+		
 
 	</div><!-- #wrapper end -->
 
