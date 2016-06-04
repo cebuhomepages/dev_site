@@ -34,7 +34,6 @@
 	<!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
-
 	<!-- Document Title
 	============================================= -->
 	<title>{{ page.title }}</title>
@@ -204,32 +203,7 @@
 								</div>
 								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_851943f628abfb51292daa61b_bbc48c996e" tabindex="-1" value=""></div>
 							</form>
-							<script type="text/javascript">
-								$("#widget-subscribe-form").validate({
-									submitHandler: function(form) {
-										$(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
-										$(form).ajaxSubmit({
-											data: $(form).serialize(),
-											dataType: 'jsonp',
-											target: '#widget-subscribe-form-result',
-											success: function() {
-												$(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
-												$('#widget-subscribe-form').find('.form-control').val('');
-												$('#widget-subscribe-form-result').attr('data-notify-type','success');
-												$('#widget-subscribe-form-result').attr('data-notify-msg', '<i class=icon-ok-sign></i>Thank you for Subscribing. Sent you a confirmation mail.').html('');
-												SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
-											},
-											error: function() {
-												$(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
-												$('#widget-subscribe-form').find('.form-control').val('');
-												$('#widget-subscribe-form-result').attr('data-notify-type','success');
-												$('#widget-subscribe-form-result').attr('data-notify-msg', '<i class=icon-ok-sign></i>Thank you for Subscribing. Sent you a confirmation mail.').html('');
-												SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
-											}
-										});
-									}
-								});
-							</script>
+							
 						</div>
 
 						<div class="widget clearfix" style="margin-bottom: -20px;">
@@ -317,6 +291,62 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="{{ site.root.js | prepend: site.cdn }}/functions.js"></script>
+	{% if page.include_map %}
+	<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="{{ site.root.js | prepend: site.cdn }}/jquery.gmap.js"></script>
+
+	<script type="text/javascript">
+		$('#{{ page.map.id }}').gMap({
+			 aaddress: '{{ page.map.address }}',
+			 maptype: 'ROADMAP',
+			 zoom: {{ page.map.zoom }},
+			 markers: [
+				{
+					latitude: 10.320653,
+					longitude: 123.936760,
+					html: "{{ page.map.html_desc }}"
+				}
+			 ],
+			 doubleclickzoom: false,
+			 controls: {
+				 panControl: true,
+				 zoomControl: true,
+				 mapTypeControl: false,
+				 scaleControl: false,
+				 streetViewControl: false,
+				 overviewMapControl: false
+			}
+		});
+	</script>
+	{% endif %}
+
+	<script type="text/javascript">
+	$("#widget-subscribe-form").validate({
+		submitHandler: function(form) {
+			$(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
+			$(form).ajaxSubmit({
+				data: $(form).serialize(),
+				dataType: 'jsonp',
+				target: '#widget-subscribe-form-result',
+				success: function() {
+					$(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+					$('#widget-subscribe-form').find('.form-control').val('');
+					$('#widget-subscribe-form-result').attr('data-notify-type','success');
+					$('#widget-subscribe-form-result').attr('data-notify-msg', '<i class=icon-ok-sign></i>Thank you for Subscribing. Sent you a confirmation mail.').html('');
+					SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
+				},
+				error: function() {
+					$(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+					$('#widget-subscribe-form').find('.form-control').val('');
+					$('#widget-subscribe-form-result').attr('data-notify-type','success');
+					$('#widget-subscribe-form-result').attr('data-notify-msg', '<i class=icon-ok-sign></i>Thank you for Subscribing. Sent you a confirmation mail.').html('');
+					SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
+				}
+			});
+		}
+	});
+	</script>
+
 
 	{% if page.custom_js %}
   	  {% for js_file in page.custom_js %}
