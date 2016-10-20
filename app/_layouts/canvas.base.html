@@ -11,7 +11,7 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="{{ site.root.css | prepend: site.cdn }}/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="{{ site.root.r | prepend: site.cdn }}/style.css" type="text/css" />
 	<link rel="stylesheet" href="{{ site.root.css | prepend: site.cdn }}/font-icons.css" type="text/css" />
@@ -65,8 +65,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="{{ site.baseurl }}/l/mandani" class="standard-logo" data-dark-logo="{{ site.cdn }}/canvas/images/logo-dark.png"><img src="{{ site.cdn }}/canvas/images/logo.png" alt="Mandani Bay Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="{{ site.cdn }}/canvas/images/logo-dark@2x.png"><img src="{{ site.cdn }}/canvas/images/logo@2x.png" alt="Mandani Bay Logo"></a>
+						<a href="{{ site.baseurl }}/l/{{ page.l.index }}" class="standard-logo" data-dark-logo="{{ site.cdn }}/canvas/images/{{ page.l.logo }}"><img src="{{ site.cdn }}/canvas/images/{{ page.l.logo }}" alt="{{ page.l.alt }}"></a>
+						<a href="{{ site.baseurl }}/l/{{ page.l.index }}" class="retina-logo" data-dark-logo="{{ site.cdn }}/canvas/images/{{ page.l.logo2x }}"><img src="{{ site.cdn }}/canvas/images/{{ page.l.logo2x }}" alt="{{ page.l.alt }}"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation
@@ -74,10 +74,15 @@
 					<nav id="primary-menu">
 
 						<ul class="one-page-menu">
-							<li><a href="{{ site.baseurl }}/l/mandani"><div>Home</div></a></li>
-							<li class="current"><a href="#"><div>Master Plan</div></a></li>
-							<li><a href="#"><div>Phase 1</div></a></li>
-							<li><a href="#"><div>Get Invited</div></a></li>
+							{% for menu in page.l.menus %}
+							   {% if menu.is_current == true %}
+							      <li><a class="current" href="#"><div>{{ menu.name }}</div></a></li>
+							   {% elsif menu.url != '#' %}
+							      <li><a href="{{ site.baseurl }}{{ menu.url }}"><div>{{ menu.name }}</div></a></li>
+							   {% else %}
+							       <li><a href="#"><div>{{ menu.name }}</div></a></li>
+							   {% endif %}
+							{% endfor %}
 						</ul>
 
 					</nav><!-- #primary-menu end -->

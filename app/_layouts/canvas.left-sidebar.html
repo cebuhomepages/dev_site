@@ -63,8 +63,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="{{ site.baseurl }}/l/mandani" class="standard-logo" data-dark-logo="{{ site.cdn }}/canvas/images/logo-dark.png"><img src="{{ site.cdn }}/canvas/images/logo.png" alt="Mandani Bay Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="{{ site.cdn }}/canvas/images/logo-dark@2x.png"><img src="{{ site.cdn }}/canvas/images/logo@2x.png" alt="Mandani Bay Logo"></a>
+						<a href="{{ site.baseurl }}" class="standard-logo" data-dark-logo="{{ site.root.images | prepend: site.cdn }}/logo-dark.png"><img src="{{ site.root.images | prepend: site.cdn }}/logo.png" alt="Cebu Home Pages Logo"></a>
+						<a href="{{ site.baseurl }}" class="retina-logo" data-dark-logo="{{ site.root.images | prepend: site.cdn }}/logo-dark@2x.png"><img src="{{ site.root.images | prepend: site.cdn }}/logo@2x.png" alt="Cebu Home PagesLogo"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation
@@ -72,10 +72,10 @@
 					<nav id="primary-menu">
 
 						<ul class="one-page-menu">
-							<li><a href="{{ site.baseurl }}/l/mandani"><div>Home</div></a></li>
-							<li class="current"><a href="#"><div>Master Plan</div></a></li>
-							<li><a href="#"><div>Phase 1</div></a></li>
-							<li><a href="#"><div>Get Invited</div></a></li>
+							<li><a href="{{ site.baseurl }}"><div>Home</div></a></li>
+							<li class="current"><a href="#"><div>Listings</div></a></li>
+							<li><a href="#"><div>Advice</div></a></li>
+							<li><a href="#"><div>Contact</div></a></li>
 						</ul>
 
 						<!-- Top Search
@@ -101,12 +101,11 @@
 		<section id="page-title">
 
 			<div class="container clearfix">
-				<h1>Left Sidebar</h1>
-				<span>Page Content on the Right &amp; Sidebar on the Left</span>
+				<h1>{{ page.title }}</h1>
+				<span>{{ page.title_desc }}</span>
 				<ol class="breadcrumb">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Pages</a></li>
-					<li class="active">Left Sidebar</li>
+					<li><a href="{{ site.baseurl }}">Home</a></li>
+					<li class="active">{{ page.title }}</li>
 				</ol>
 			</div>
 

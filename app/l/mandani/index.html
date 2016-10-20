@@ -46,6 +46,7 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 	<!--[if lt IE 9]>
 		<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/9.2.3/css/intlTelInput.css" type="text/css" />
 
 	<!-- External JavaScripts
 	============================================= -->
@@ -130,7 +131,7 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 								<input type="email" class="form-control input-lg not-dark" value="" placeholder="Your Email*" name="EMAIL">
 							</div>
 							<div class="col_one_third col_last nobottommargin">
-								<input type="text" class="form-control input-lg not-dark" value="" placeholder="09171234567*" name="MMERGE3">
+								<input type="tel" id="phone" class="form-control input-lg not-dark"name="MMERGE3">
 							</div>
 						</div>
 						<div class="col_one_fifth col_last nobottommargin">
@@ -748,7 +749,7 @@ Phase One will comprise two blocks of approximately <strong>1,200</strong> condo
 
 						<div class="center">
 
-							<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cebuhomepages.com/l/mandani/" target="_blank" data-animate="tada" class="button button-3d button-blue button-xlarge nobottommargin"><i class="icon-share"></i>Share on <i class="icon-facebook-sign icon-3"></i></a> - OR - <a href="tel:++639176312463" data-scrollto="#section-pricing" class="button button-3d btn-info button-xlarge nobottommargin"><i class="icon-phone3"></i>Call Luchelle</a>
+							<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cebuhomepages.com/l/mandani/" target="_blank" data-animate="tada" class="button button-3d button-blue button-xlarge nobottommargin"><i class="icon-share"></i>Share on <i class="icon-facebook-sign icon-3"></i></a> - OR - <a href="tel:+639176312463" class="button button-3d btn-info button-xlarge nobottommargin"><i class="icon-phone3"></i>Call Luchelle</a>
 
 						</div>
 
@@ -1007,6 +1008,20 @@ Phase One will comprise two blocks of approximately <strong>1,200</strong> condo
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/functions.js"></script>
+	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/pricing.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/9.2.3/js/intlTelInput.min.js"></script>
+	<script type="text/javascript" >
+$("#phone").intlTelInput({
+  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/9.2.3/js/utils.js?4"
+});
+	</script>
+	<style type="text/css">
+     .intl-tel-input .country {
+     	color: #999;
+     }
+   </style>
+	
+	{% include adwords-remarketing.html %}
 
 </body>
 </html>
