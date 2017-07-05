@@ -40,4 +40,8 @@
   <![endif]-->
 
   {% include analytics.html %}
+
+  {% if page.is_adsense %}
+    {% include adsense.html %}
+  {% endif %}
 </head>

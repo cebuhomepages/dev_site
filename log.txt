@@ -1,0 +1,161 @@
+[4mRunning "clean:dist" (clean) task[24m
+[32m>> [39m37 paths cleaned.
+
+[4mRunning "clean:server" (clean) task[24m
+[32m>> [39m0 paths cleaned.
+
+[4mRunning "clean:dist_push" (clean) task[24m
+[32m>> [39m0 paths cleaned.
+
+[4mRunning "jekyll:dist" (jekyll) task[24m
+`jekyll build --source app --destination dist --config _config.yml,_config.build.yml` was initiated.
+
+
+Jekyll output:
+Configuration file: _config.yml
+Configuration file: _config.build.yml
+            Source: app
+       Destination: dist
+      Generating... 
+                    done.
+ Auto-regeneration: disabled. Use --watch to enable.
+
+[4mRunning "concurrent:dist" (concurrent) task[24m
+    
+    [4mRunning "sass:dist" (sass) task[24m
+    
+    [32mDone, without errors.[39m
+    
+    
+    Execution Time (2017-02-22 12:56:28 UTC)
+    loading tasks  2.5s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 99%
+    Total 2.5s
+        
+    [4mRunning "copy:dist" (copy) task[24m
+    Created [36m3[39m directories, copied [36m12[39m files
+    
+    [32mDone, without errors.[39m
+    
+    
+    Execution Time (2017-02-22 12:56:28 UTC)
+    loading tasks  2.5s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 38%
+    copy:dist        4s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 62%
+    Total 6.5s
+    
+[4mRunning "htmlmin:dist" (htmlmin) task[24m
+Minified dist/404.html 3.05 kB → 2.94 kB
+Minified dist/about.html 19.93 kB → 14.98 kB
+Minified dist/about/index.html 27.83 kB → 22.97 kB
+Minified dist/advice.html 44.6 kB → 33.88 kB
+Minified dist/blog/2014/02/28/blog-party-here-we-are.html 20.04 kB → 14.88 kB
+Minified dist/blog/2014/03/03/how-do-you-choose-real-estate-agent-or-broker.html 22.36 kB → 16.84 kB
+Minified dist/blog/2014/03/04/trust-what-every-client-requires.html 23.16 kB → 17.66 kB
+Minified dist/blog/2014/03/17/how-much-are-you-paying-for.html 19.93 kB → 14.5 kB
+Minified dist/blog/2014/04/14/what-made-me-decide.html 22.9 kB → 17.6 kB
+Minified dist/blog/2014/06/11/Thank-you-for-the-award.html 19.12 kB → 13.76 kB
+Minified dist/blog/2014/06/11/partner-friend.html 19.51 kB → 14.09 kB
+Minified dist/blog/2015/01/01/5-reasons-to-choose-mivesa.html 20.64 kB → 15.68 kB
+Minified dist/blog/2015/03/24/turnover-ceremony-for-midori-clients.html 18.71 kB → 13.58 kB
+Minified dist/blog/2015/03/25/busy-week-for-loan-processing.html 19.08 kB → 13.95 kB
+Minified dist/blog/2015/04/01/a-lesson-for-buyers.html 20.61 kB → 15.2 kB
+Minified dist/blog/2015/04/03/10-questions-to-ask-from-your-real-estate-agent.html 23.52 kB → 18 kB
+Minified dist/blog/2015/04/05/reasons-to-buy-condo.html 22.34 kB → 17.09 kB
+Minified dist/blog/2015/04/06/preparing-for-first-real-estate-purchase.html 23.99 kB → 18.36 kB
+Minified dist/blog/2015/04/07/how-to-get-maximum-loan-approved-fast.html 20.22 kB → 14.81 kB
+Minified dist/blog/2015/04/10/how-to-invest-your-sgd-in-cebu.html 20.22 kB → 14.82 kB
+Minified dist/blog/2015/10/01/how-connect-with-your-broker.html 20.7 kB → 15.53 kB
+Minified dist/blog/2015/10/15/hassle-free-condo-management.html 20.65 kB → 15.48 kB
+Minified dist/blog/2016/02/21/getting-started-with-buying-real-estate.html 22.25 kB → 17.06 kB
+Minified dist/blog/listing/2014/06/11/Greenwood-subdivision-corner-lot.html 19.07 kB → 13.95 kB
+Minified dist/canvas/images/demos/travel/travel-holidays.html 24.93 kB → 18.26 kB
+Minified dist/canvas/images/demos/travel/travel-hotels.html 33.85 kB → 26.4 kB
+Minified dist/casamira-aus.html 999 B → 960 B
+Minified dist/casamira.html 999 B → 960 B
+Minified dist/contact.html 16.63 kB → 12.4 kB
+Minified dist/dl/serenis-free-brochure/index.html 1.05 kB → 1.01 kB
+Minified dist/googlefe89c597e721109a.html 53 B → 53 B
+Minified dist/index.html 51.56 kB → 34.57 kB
+Minified dist/l/38-park-avenue/amp/index.html 42.92 kB → 41.16 kB
+Minified dist/l/38-park-avenue/index.html 36.65 kB → 35.52 kB
+Minified dist/l/baselinecenter/index.html 20.98 kB → 16.04 kB
+Minified dist/l/baselinecenter/index2.html 44.56 kB → 37.77 kB
+Minified dist/l/baselinecenter/index3.html 26.33 kB → 22.88 kB
+Minified dist/l/baselinecenter/index4.html 34.43 kB → 28.95 kB
+Minified dist/l/invite/events/open-house/2016-04-01-SM-City-Cebu-Northwing.html 9.2 kB → 8.49 kB
+Minified dist/l/invite/events/open-house/2016-04-30-Gallery-Showroom-SoftLaunching.html 9.21 kB → 8.51 kB
+Minified dist/l/invite/index.html 45.68 kB → 37.75 kB
+Minified dist/l/invite/master-plan/index.html 23.45 kB → 20.23 kB
+Minified dist/l/invite/phase1/index.html 21.61 kB → 18.36 kB
+Minified dist/l/invite/pricing/index.html 21.1 kB → 17.66 kB
+Minified dist/l/invite/thank-you/index.html 8.5 kB → 7.81 kB
+Minified dist/l/latitude/events/2016-11-21-Latitude-Corporate-Center-Highest-office-building-in-cebu-business-park/index.html 9.37 kB → 8.66 kB
+Minified dist/l/mandani/amp/index.html 43.27 kB → 41.51 kB
+Minified dist/l/mandani/blog/2016/05/welcome-to-mandani.html 22.8 kB → 19.8 kB
+Minified dist/l/mandani/events/open-house/2016-04-01-SM-City-Cebu-Northwing.html 9.23 kB → 8.49 kB
+Minified dist/l/mandani/events/open-house/2016-04-30-Gallery-Showroom-SoftLaunching.html 9.25 kB → 8.51 kB
+Minified dist/l/mandani/index.html 47.37 kB → 39.33 kB
+Minified dist/l/mandani/master-plan/index.html 26.58 kB → 22.91 kB
+Minified dist/l/mandani/phase1/index.html 23.45 kB → 19.7 kB
+Minified dist/l/mandani/pricing/index.html 48.35 kB → 38.31 kB
+Minified dist/l/mandani/thank-you/index.html 9.14 kB → 8.32 kB
+Minified dist/l/mivesa/amp/index.html 29.97 kB → 26.77 kB
+Minified dist/l/mivesa/index.html 53.05 kB → 31.25 kB
+Minified dist/l/mivesa/reg/index.html 11.96 kB → 8.92 kB
+Minified dist/l/mivesa/reg/pitch.html 5.35 kB → 4.78 kB
+Minified dist/l/mivesa/thankyou/index.html 8.91 kB → 8.21 kB
+Minified dist/l/serenis/reg/index.html 11.43 kB → 8.72 kB
+Minified dist/l/serenis/serenis_index.html 53.1 kB → 31.3 kB
+Minified dist/l/serenis/u/duplex/index.html 17.99 kB → 13.07 kB
+Minified dist/listing/2012/01/01/san-jose-maria-village-balamban.html 18.83 kB → 13.89 kB
+Minified dist/listing/2013/01/01/mivesa-garden-residences.html 20.34 kB → 15.38 kB
+Minified dist/listing/2013/04/09/urban-homes-tipolo.html 19.95 kB → 14.98 kB
+Minified dist/listing/2013/07/27/almiya.html 20.42 kB → 15.42 kB
+Minified dist/listing/2013/08/24/Avida-towers-Riala.html 21.57 kB → 16.56 kB
+Minified dist/listing/2014/01/01/velmiro-heights.html 18.63 kB → 13.71 kB
+Minified dist/listing/2014/02/24/park-centrale.html 19.59 kB → 14.65 kB
+Minified dist/listing/2014/07/09/casa-mira.html 18.79 kB → 13.86 kB
+Minified dist/listing/2014/07/23/baseline-residences.html 21.46 kB → 16.51 kB
+Minified dist/listing/2014/08/29/Woodway-townhomes.html 19.04 kB → 14.11 kB
+Minified dist/listing/2014/10/16/Harmonis-Residences.html 19.15 kB → 14.22 kB
+Minified dist/listing/2015/02/20/baseline-centrale.html 19.74 kB → 14.76 kB
+Minified dist/listings.html 34.74 kB → 26.13 kB
+Minified dist/pmivesa.html 1.04 kB → 1 kB
+Minified dist/portfolioitems.html 4.11 kB → 2.61 kB
+Minified dist/post-with-cards.html 15.97 kB → 11.87 kB
+Minified dist/privacy-policy/index.html 27.54 kB → 22.47 kB
+Minified dist/pvelmiroh.html 1.02 kB → 978 B
+Minified dist/pwoodway.html 1.02 kB → 984 B
+Minified dist/r/sotogrande-903/index.html 40.65 kB → 32.11 kB
+Minified dist/search/index.html 48.14 kB → 37.93 kB
+Minified dist/test/index.html 521 B → 442 B
+Minified dist/test/yo-greeting-basic.html 819 B → 755 B
+Minified dist/test/yo-list-basic.html 1.04 kB → 975 B
+Minified dist/v4.1/include/ajax/portfolio-single-gallery.html 1.69 kB → 1.4 kB
+Minified dist/v4.1/include/ajax/portfolio-single-image.html 3.78 kB → 2.49 kB
+Minified dist/v4.1/include/ajax/portfolio-single-thumbs.html 4.53 kB → 3.25 kB
+Minified dist/v4.1/include/ajax/portfolio-single-video.html 1.32 kB → 1.16 kB
+Minified dist/v4.1/include/ajax/shop-item.html 4.75 kB → 2.79 kB
+Minified dist/velmiro.html 1.02 kB → 978 B
+Minified dist/woodway.html 1.02 kB → 984 B
+
+[4mRunning "clean:dist_push" (clean) task[24m
+[32m>> [39m524 paths cleaned.
+
+[4mRunning "git_deploy:remote" (git_deploy) task[24m
+Running [32minit[39m
+Running [32mcheckout --orphan master[39m
+Running [32madd --all[39m
+Running [32mcommit --message="autocommit"[39m
+Running [32mpush --prune --force --quiet git@github.com:cebuhomepages/cebuhomepages.github.io.git master[39m
+
+[32mDone, without errors.[39m
+
+
+Execution Time (2017-02-22 12:56:14 UTC)
+loading tasks       1.5s  ▇ 2%
+jekyll:dist        11.3s  ▇▇▇▇▇▇▇▇ 16%
+concurrent:dist     7.2s  ▇▇▇▇▇ 11%
+htmlmin:dist        1.4s  ▇ 2%
+git_deploy:remote  46.8s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 68%
+Total 1m 8.5s
+

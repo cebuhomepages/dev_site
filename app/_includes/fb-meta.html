@@ -1,6 +1,6 @@
  
 
- 	<meta property="og:type" content="article" />
+ 	<meta property="og:type" content="website" />
     
     <meta property="og:image" content="{% if site.img_host contains 'https://' %}{{ site.img_host | replace:'https://','http://' }}{% else %}{{ site.img_host }}{% endif %}/images/{% if page.fb.image %}{{ page.fb.image }}{% else %}{{ site.fb.og_image }}{% endif %}">
 	{% if site.baseurl contains 'https://' %}

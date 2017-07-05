@@ -80,6 +80,8 @@ owner:
   phone_display: "0917 631 2463"
   email: luchelle@cebuhomepages.com
   site: www.cebuhomepages.com
+  whatsapp:
+    username: +639176312463
 
 fbc-comments-firebase: https://chpcomments.firebaseio.com/
 
@@ -91,6 +93,7 @@ copyright_date: 2015
 
 # Social Setup
 facebook: https://facebook.com/cebuhomepages
+messenger: //m.me/cebuhomepages
 xfb:
   app_id: 270751863008126
   on: true

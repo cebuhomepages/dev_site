@@ -17,26 +17,26 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 
 units: 
   - 800x600: 
-      thumbnail: /canvas/images/portfolio/2/1.jpg
-      full: /canvas/images/portfolio/full/1.jpg
+      thumbnail: /canvas/images/l/mandani/phase1/studio-living-room-800x600.jpg
+      full: /canvas/images/l/mandani/phase1/studio-1440-500.jpg
     type: Studio
     url: #
     sqm: "29.7"
   - 800x600: 
-      thumbnail: /canvas/images/portfolio/2/1.jpg
-      full: /canvas/images/portfolio/full/1.jpg
+      thumbnail: /canvas/images/l/mandani/phase1/1br-800x600.jpg
+      full: /canvas/images/l/mandani/phase1/1br-1140x500.jpg
     type: 1 Bedroom
     url: #
     sqm: "30.7"
   - 800x600: 
-      thumbnail: /canvas/images/portfolio/2/1.jpg
-      full: /canvas/images/portfolio/full/1.jpg
+      thumbnail: /canvas/images/l/mandani/phase1/2br-bed-800x600.jpg
+      full: /canvas/images/l/mandani/phase1/2br-livingroom-1140x500.jpg
     type: 2 Bedroom
     url: #
     sqm: "30.7"
   - 800x600: 
-      thumbnail: /canvas/images/portfolio/2/1.jpg
-      full: /canvas/images/portfolio/full/1.jpg
+      thumbnail: /canvas/images/l/mandani/phase1/3br-800x600.jpg
+      full: /canvas/images/l/mandani/phase1/3br-render-layout-1140x500.jpg
     type: 3 Bedroom
     url: #
     sqm: "60.7"
@@ -85,7 +85,10 @@ units:
 
 </head>
 
-<body class="stretched">
+<body class="stretched" data-loader-timeout="2000">
+
+	{% include adwords-conversion-tracking.html %}
+  	{% include fb-sdk.html %}
 
 	<!-- Document Wrapper
 	============================================= -->
@@ -130,8 +133,8 @@ units:
 		<section id="page-title">
 
 			<div class="container clearfix">
-				<h1>Phase 1</h1>
-				<span>Mandani Bay Suites</span>
+				<h1>Mandani Bay Suites</h1>
+				<span>Phase 1</span>
 				<ol class="breadcrumb">
 					<li><a href="{{ site.baseurl }}/l/mandani">Home</a></li>
 					<li class="active">Phase 1</li>
@@ -170,12 +173,7 @@ units:
 
 							<h3>The First of Many</h3>
 
-							<p>The waterfront lifestyle at Mandani Bay begins at Mandani Bay Suites, the property’s first residential enclave. Two towers are situated on a large podium that houses recreational amenities, community support facilities, and car parks.</p>
-
-							<p>Mandani Bay Suites features studio to three-bedroom units, and a number of individually designed special units including townhouses, lofts, penthouses, and garden units.</p>
-
-							<p>
-								Aptly names for its luxurious fusion of convenience and exclusivity, this landmark gleams with a modern yet timeless exterior. 
+							<p>The waterfront lifestyle at Mandani Bay begins at Mandani Bay Suites, the property’s first residential enclave. Two towers are situated on a large podium that houses recreational amenities, community support facilities, and car parks. Mandani Bay Suites features studio to three-bedroom units, and a number of individually designed special units including townhouses, lofts, penthouses, and garden units. Aptly names for its luxurious fusion of convenience and exclusivity, this landmark gleams with a modern yet timeless exterior. 
 							</p>
 							<p>
 							Whether your passion is for adventure, culture, creativity, or water, live it at the Mandani Bay Suites.
@@ -188,7 +186,7 @@ units:
 
 				</div>
 
-				<div class="section dark bottommargin-lg" style="background: linear-gradient(rgba(76,175,80, 0.8), rgba(46,125,50, 0.8)), url('{{ site.cdn }}{{ site.root.images }}/l/mandani/marina.jpg'); padding: 100px 0;" >
+				<div class="section dark bottommargin-lg" style="background: linear-gradient(rgba(76,175,80, 0.8), rgba(46,125,50, 0.8)), url('{{ site.cdn }}{{ site.root.images }}/l/mandani/marina-1.jpg'); padding: 100px 0;" >
 
 					<div class="container clearfix">
 
@@ -242,7 +240,6 @@ units:
 								</a>
 								<div class="portfolio-overlay">
 									<a href="{{ unit.800x600.full | prepend: site.cdn }}" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-									<a href="{{ unit.url }}" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
 							<div class="portfolio-desc">
@@ -255,9 +252,9 @@ units:
 				</div>
 				<div class="clear"></div>
 
-				<a href="{{ site.baseurl }}/l/mandani/pricing/" class="button button-full center tright topmargin footer-stick">
+				<a href="{{ site.baseurl }}/l/mandani/" class="button button-full center tright topmargin footer-stick">
 					<div class="container clearfix">
-						Pricing <strong>Start here</strong> <i class="icon-caret-right" style="top:4px;"></i>
+						Exciting Progress Ahead <strong>Start here</strong> <i class="icon-caret-right" style="top:4px;"></i>
 					</div>
 				</a>
 
@@ -471,6 +468,7 @@ units:
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/functions.js"></script>
+	{% include adwords-remarketing.html %}
 
 </body>
 </html>

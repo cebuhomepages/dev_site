@@ -18,6 +18,12 @@ images:
 title: Mandani Bay thru Cebu Home Pages
 
 description: Mandani Bay is a premium mixed-use development in Mandaue City, Cebu. It occupies a waterfront site of approximately 20 hectares with a prominent location between Mactan Island, the home of Cebu International Airport, and Cebu business park, a major commercial area in Cebu.  The project will be developed in phases over more than 10 years.
+
+postedBy:
+  name: Ian Cabigon
+  desc: Ian is a Real Estate Entreprenuer by heart. He is running this website ( cebuhomepages.com ) to help Luchelle, promote her real estate brokerage. He is also a co-host of Luchelle in their real estate venture through Airbnb
+  image: http://dmcagfio3mnht.cloudfront.net/canvas/images/blog/author/ian.jpg
+  
 ---
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
@@ -27,6 +33,7 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
 	{% include fb-meta.html %}
+	<meta property="fb:pages" content="171758572945221" />
 
 	<!-- Favicon-->
  	<link rel="shortcut icon" href="{{ '/canvas/images/icons/favico/mandanibay.png' | prepend: site.cdn }}" >
@@ -43,6 +50,7 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 
 	<link rel="stylesheet" href="{{ site.cdn }}/canvas/css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="amphtml" href="{{ page.url | prepend: site.baseurl | replace: '/index.html' : '' | append: '/amp'}}" />
 	<!--[if lt IE 9]>
 		<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
@@ -133,6 +141,7 @@ description: Mandani Bay is a premium mixed-use development in Mandaue City, Ceb
 							<div class="col_one_third col_last nobottommargin">
 								<input type="tel" id="phone" class="form-control input-lg not-dark"name="MMERGE3">
 							</div>
+							<input type="hidden" id="cc" name="CC"/>
 						</div>
 						<div class="col_one_fifth col_last nobottommargin">
 							<button class="btn btn-lg btn-primary btn-block nomargin" value="submit" type="submit" style=""><i class="stat-icon"></i></span>&nbsp;<span class="subscribe-text">SUBSCRIBE ME</span></button>
@@ -1008,11 +1017,25 @@ Phase One will comprise two blocks of approximately <strong>1,200</strong> condo
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/functions.js"></script>
+	<a id="pricing-main-json" style="display:none" href="{{ site.cdn }}/canvas/js/mandani.pricing.main.json"></a>
 	<script type="text/javascript" src="{{ site.cdn }}/canvas/js/pricing.js"></script>
+	
+
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/9.2.3/js/intlTelInput.min.js"></script>
 	<script type="text/javascript" >
 $("#phone").intlTelInput({
+  nationalMode: true,
   utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/9.2.3/js/utils.js?4"
+});
+
+// listen to "keyup", but also "change" to update when the user selects a country
+$("#phone").on("keyup change", function() {
+  var intlNumber = $("#phone").intlTelInput("getNumber");
+  if (intlNumber) {
+    $("#cc").val(intlNumber);
+  } else {
+    $("#cc").val('Not Specified');
+  }
 });
 	</script>
 	<style type="text/css">

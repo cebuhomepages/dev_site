@@ -95,13 +95,17 @@ module.exports = function (grunt) {
             // Running Jekyll also cleans the target directory.  Exclude any
             // non-standard `keep_files` here (e.g., the generated files
             // directory from Jekyll Picture Tag).
-            '!<%= yeoman.dist %>/.git*'
+            '!<%= yeoman.dist %>/.git*',
           ]
         }]
       },
       server: [
         '.tmp',
         '.jekyll'
+      ],
+      dist_push:[
+        '<%= yeoman.dist %>/canvas/**/*',
+        '<%= yeoman.dist %>/v4.1/**/*'
       ]
     },
     sass: {
@@ -179,7 +183,10 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.dist %>',
-          src: '**/*.html',
+          src: [
+            '**/*.html',
+            '!**/ia/**/*.html',
+          ],
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -453,6 +460,7 @@ module.exports = function (grunt) {
     'jekyll:dist',
     'concurrent:dist',
     'htmlmin',
+    'clean:dist_push',
     //'responsive_images:dist',
     //'imagemin:dist',
     'git_deploy:remote'
