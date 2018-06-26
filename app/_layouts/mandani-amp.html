@@ -1869,18 +1869,18 @@ padding-top:0px;
       	"eventLabel": "Promo for {{ page.title }}",
       	"eventValue": 10
       }
-    },
-	"trackClickOnPrice": {
-      "on": "click",
-      "selector": ".price-list",
-      "request": "event",
-      "vars": {
-      	"eventCategory": "Page View",
-      	"eventAction": "price",
-      	"eventLabel": "Price View for {{ page.title }}",
-      	"eventValue": 10
-      }
-    }
+	},
+	"trackClickOnEmailLead": {
+		"on": "click",
+		"selector": ".email-btn-lead",
+		"request": "event",
+		"vars": {
+			"eventCategory": "Email Lead",
+			"eventAction": "mailto",
+			"eventLabel": "Emailing for {{ page.title }}",
+			"eventValue": 10
+		}
+	  }
 
   }
 }
@@ -1893,50 +1893,12 @@ padding-top:0px;
 	</header>
 	<div class="header-clear"></div>
 	
-	<amp-sidebar id="sidebar" layout="nodisplay" side="left">
-		<div class="sidebar-header">
-			<a href="{{ site.facebook }}"><i class="fa fa-facebook"></i></a>
-			<a href="{{ site.twitter }}"><i class="fa fa-twitter"></i></a>
-			<a href="tel:{{ site.owner.phone }}" class="call-btn"><i class="fa fa-phone"></i></a>
-			<a href="sms:{{ site.owner.phone }}?body=Hi%20Luchelle,%20I%27m%20interested%20in%20{{ page.title }}" class="sms-btn"><i class="fa fa-comment-o"></i></a>
-			<a href="#"><i class="fa fa-times"></i></a>
-			<div class="clear"></div>
-		</div>
-		<a href="#" class="sidebar-logo"></a>
-		<p class="sidebar-divider">Navigation</p>
-		<div class="sidebar-menu">
-			<a href="#" class="sidebar-item active-item"><i class="bg-red-dark fa fa-star-o"></i>Home<i class="fa fa-circle"></i></a>
-			<a href="{{ page.menu.price.url }}" class="sidebar-item price-list"><i class="bg-green-dark fa fa-money"></i>{{ page.menu.price.text }}<i class="fa fa-circle"></i></a>
-		</div>
-        <p class="sidebar-divider full-top">Let's get Social</p>
-		<div class="sidebar-menu full-top">
-			<a href="{{ site.facebook }}" class="sidebar-item"><i class="facebook-bg fa fa-facebook"></i>Facebook<i class="fa fa-circle"></i></a>
-			<a href="{{ site.twitter }}" class="sidebar-item"><i class="twitter-bg fa fa-twitter"></i>Twitter<i class="fa fa-circle"></i></a>
-            <a href="{{ site.google_plus }}" class="sidebar-item"><i class="google-bg fa fa-google-plus"></i>Google +<i class="fa fa-circle"></i></a>
-            <a href="tel:{{ site.owner.phone }}" class="sidebar-item"><i class="call-btn bg-green-dark fa fa-phone"></i>Call Us<i class="fa fa-circle"></i></a>
-            <a href="sms:{{ site.owner.phone }}?body=Hi%20Luchelle,%20I%27m%20interested%20in%20{{ page.title }}" class="sidebar-item sms-btn"><i class="bg-green-light fa fa-comment-o"></i>Text Us<i class="fa fa-circle"></i></a>
-            <a href="{{ site.owner.email }}" class="sidebar-item"><i class="bg-blue-light fa fa-envelope-o"></i>Mail Us<i class="fa fa-circle"></i></a>
-        </div>
-        <p class="sidebar-divider full-top">Copyright 2017. All rights reserved.</p>
-	</amp-sidebar>
+	{% include mandani-amp-sidebar.html %}
 
-	<div class="sliders">
-	<amp-carousel class="slider" width="600" height="375" layout="responsive" type="slides" controls autoplay loop delay="3000">
-		{% for slider in page.slider %}
-	    <div>
-			<amp-img class="responsive-img" src="{{ slider.img | prepend : site.cdn }}" layout="fill"></amp-img>
-			<div class="caption">
-				{% if slider.text_is_centered %}
-				<h3 class="center-text">{{ slider.text_big }}</h3>
-				<p class="center-text">{{ slider.text_small }}</p>
-				{% else %}
-				<h3>{{ slider.text_big }}</h3>
-				<p>{{ slider.text_small }}</p>
-				{% endif %}
-			</div>
-		</div>
-		{% endfor %}
-	</amp-carousel>
+	<div class="heading-block bg-1">
+		<h4>Investing In Mandani Bay</h4>
+		<p>The buying process</p>
+		<div class="overlay"></div>
 	</div>
 	
 	<div class="call-to-action full-bottom">
@@ -1946,86 +1908,50 @@ padding-top:0px;
 		<div class="clear"></div>
 	</div>
 
-	<div class="content">		
-		<div class="container">
-			<h5 class="center-text uppercase ultrabold">{{ page.heading.ultrabold }}</h5>
-			<h4 class="center-text uppercase bold half-bottom">{{ page.heading.bold }}</h4>
-			<p class="center-text boxed-text">
-				{{ page.heading.desc }}
-			</p>
-			<div class="social-icons">
-				<a href="//www.facebook.com/sharer/sharer.php?u={{ page.url }}" class="color-white facebook-bg center-text"><i class="fa fa-facebook"></i></a>
-				<a href="//twitter.com/share?url={{ site.baseurl }}{{ page.url }}" class="color-white twitter-bg center-text"><i class="fa fa-twitter"></i></a>
-				<a href="//plus.google.com/share?url={{ site.baseurl }}{{ page.url }}" class="color-white google-bg center-text"><i class="fa fa-google-plus"></i></a>
-				<div class="clear"></div>
-			</div>
-		</div>	
+	<div class="content half-bottom full-top">
+		<h4 class="news-post-title">How to Buy Your Mandani Bay?</h4>
+		<p>If you are a first time home buyer or an experienced investor, here are the simple steps on how to buy your own Mandani Bay.</p>
 	</div>
-	
-	<div class="decoration decoration-margins"></div>
-	
+
+	<div class="timeline-2">
+		<div class="timeline-deco"></div>
+		
+		<div class="timeline-icon">1</div>		
+		<div class="container">
+			<h4 class="center-text">Email To Show Interest</h4>
+			<p class="half-bottom">
+				Show your interest in investing in Mandani Bay by sending an email to <a class="email-btn-lead" href="mailto:luchelle@cebuhomepages.com">luchelle@cebuhomeapges.com</a>. 
+				Luchelle is Licensed Real Estate Broker and a Partner Broker for Mandani Bay.
+				She'll make sure your account will be handled well.
+			</p>
+			<a href="mailto:luchelle@cebuhomepages.com?cc=mayet.capiones@mandanibay.com.ph&&subject=Interested%20To%20Invest%20%In%20Mandani%20Bay&body=Hi%20Luchelle,would%20like%20to%20invest%20in%20Mandani%20Bay.%20" class="button button-center bg-green-dark email-btn-lead"><i class="fa fa-envelope"></i>Send Email</a>
+		</div>	
+		
+		<div class="timeline-icon">2</div>		
+		<div class="container">
+			<h4 class="center-text half-bottom">Choose Your Unit & Plan</h4>
+			<p class="half-bottom">
+				Mandani Bay has different units and cuts to choose from. We have studio units, loft units to 3 bedroom units for you to own. Ask about the payment plans and discounts. Spot payments can go as much as 15% discount.
+			</p>
+		</div>
+
+		<div class="timeline-icon">3</div>		
+		<div class="container">
+			<h4 class="center-text half-bottom">Reservation</h4>
+			<p class="half-bottom">
+				Prepare the reservation fee. You may ask <a class="email-btn-lead" href="mailto:luchelle@cebuhomepages.com">luchelle@cebuhomeapges.com</a> on how you can deposit the payment.
+				Your partner broker would be able to give you the bank details of HTLand Inc., the developer. A receipt will be emailed back to you.
+			</p>
+		</div>
+	</div>
+
+
 	{% if page.notification_on %}
 	<amp-user-notification layout=nodisplay class="user-notification" id="amp-user-notification1">
 		{{ page.notification_message }}
 	  <button on="tap:amp-user-notification1.dismiss" class="got-it" ><i class="fa fa-check"></i>&nbsp;Got It!</button>
   	</amp-user-notification>
 	{% endif %}
-
-	<div class="heading-block bg-1">
-		<h4>{{ page.section1.heading }}</h4>
-		<p>{{ page.section1.desc }}</p>
-		<div class="overlay"></div>
-	</div>
-	
-	<div class="decoration decoration-margins"></div>
-	
-	<div class="content">
-		<div class="icon-heading">
-			{% for detail in page.section1.details %}
-			<h4><i class="fa {{ detail.icon }}"></i>{{ detail.head }}</h4>
-			<p>
-				{{ detail.desc }}
-			</p>
-			{% endfor %}
-		</div>
-	</div>
-	
-	<div class="decoration decoration-margins"></div>
-	
-	<div class="content half-bottom">
-		<amp-img class="full-bottom" src="{{ page.section2.banner_image | prepend: site.cdn }}" width="800" height="518" layout="responsive"></amp-img>
-		<div class="left-column">
-			<ul class="icon-list">
-				{% for left in page.section2.left_features %}
-				  <li><i class="fa {{ left.icon }}"></i>{{ left.desc }}</li>
-				{% endfor %}
-			</ul>
-		</div>
-		<div class="right-column">
-			<ul class="icon-list">
-				{% for right in page.section2.right_features %}
-				  <li><i class="fa {{ right.icon }}"></i>{{ right.desc }}</li>
-				{% endfor %}
-			</ul>
-		</div>
-		<div class="clear"></div>
-	</div>
-	
-	<div class="decoration decoration-margins"></div>
-	
-	<div class="heading-block bg-2">
-		<h4 class="center-text">How much are the units in {{ page.title }}?</h4>
-		<p class="center-text">We are offering Easy Payment Terms for you to own these wonderful project.</p>
-		<a href="/l/mandani/pricing" class="price-list button">Unit and Price</a>
-		{% comment %}
-		<a href="tel:{{ site.owner.phone }}" class="call-btn button">Call for Quotation</a>
-		
-		<a href="mailto:{{ site.owner.email }}?subject=Request%20Quote-{{ page.title }}&body=Hi%20Luchelle,%20I%27m%20interested%20in%20{{ page.title }}.%20Kindly%20send%20Quotation.%0DMy%20contact%20number%20is%20%20%20%20%20%0DThanks" class="email-btn button">Ask a Quotation</a>
-		{% endcomment %}
-		<div class="overlay"></div>
-	</div>
-	
-	<div class="decoration decoration-margins"></div>
 
     <div class="blockquote-3 full-bottom">
         <amp-img class="blockquote-image i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-layout" src="{{ site.cdn }}/canvas/images/l/38-park-avenue/luchelle.png" width="150" height="150" style="width: 150px; height: 150px;"><img class="i-amphtml-fill-content i-amphtml-replaced-content" src="{{ site.cdn }}/canvas/images/l/38-park-avenue/luchelle.png"></amp-img>
@@ -2039,37 +1965,16 @@ padding-top:0px;
         </div>
         <em class="color-red-dark small-text center-text half-bottom">Lead Broker</em>
         <p class="center-text small-text half-bottom center-desc">
-				{{ page.section4.partner_desc }}
+			For your protection, always deal with Licensed Real Estate Professionals.
 		</p>
         <div class="cta-buttons">
             <a href="tel:{{ site.owner.phone }}" class="color-white phone-bg center-text call-btn-2_1"><i class="fa fa-phone"></i>&nbsp;&#40;+63&#41;&nbsp;917-631-2463</a>
             <a href="mailto:{{ site.owner.email }}?subject=Inquiry%20{{ page.title }}&body=Hi%20Luchelle,%20I%27m%20interested%20in%20{{ page.title }}.%0DMy%20contact%20number%20is%20%20%20%20%20%0DThanks" class="email-btn-2_1 color-white mail-bg center-text"><i class="fa fa-envelope"></i>&nbsp;{{ site.owner.email }}</a>
-            <div class="clear"></div>
+			<a href="whatsapp://send?abid={{ site.owner.whatsapp.username }}&text=Hello%2C%20Luchelle!%2C%20I'm%2C%20interested%2C%20in%2C%20{{ page.title }}.Can%2C%20you%2C%20tell%2C%20me%2C%20more.Thanks!" class="whatsapp-bg"><i class="fa fa-whatsapp"></i>&nbsp; WhatsApp</a>
+			<div class="clear"></div>
         </div>
-    </div>
-	
-	{% if page.section5.fb_post %}
-	<div class="decoration decoration-margins"></div>
-	
-	<div class="heading-block bg-2">
-		<h4>Walk through</h4>
-		<p>Check out this video</p>
-		<div class="overlay"></div>
 	</div>
-
-	<amp-facebook class="half-bottom" width="552" height="303" layout="responsive" data-embed-as="post" data-href="{{ page.section5.fb_post }}"></amp-facebook>
-	{% endif %}
-
-
-	<div class="decoration decoration-margins"></div>
 	
-	<div class="heading-block bg-2">
-		<h4 class="center-text">{{ page.set_appointment.question }}</h4>
-		<p class="center-text">{{ page.set_appointment.action }}</p>
-		<a href="tel:{{ site.owner.phone }}" class="call-btn button">Call for Schedule</a>
-		<div class="overlay"></div>
-	</div>
-
 	<div class="decoration decoration-margins"></div>
 	
 	<div class="content">
